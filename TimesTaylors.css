@@ -1,0 +1,2864 @@
+@-moz-document url-prefix("https://times.taylors.edu.my/") {
+/* Overall */
+html, body, a, ul, li, div, span, input, p, em, 
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-family: "Google Sans", Arial, sans-serif;
+}
+
+body input[type="submit"]:hover {
+    background-color: rgb(229,9,20);
+    background-image: none;
+    -webkit-filter: brightness(1.3);
+}
+
+h1,h2,h3,h4,h5,h6,
+#adminsettings h3 {
+    color: rgb(255, 255, 255);
+    font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .form-item .form-description, .form-defaultinfo, .form-label .form-shortname, .mform legend, .mform legend a {
+    color: rgb(200, 200, 200);
+}
+
+/* Main Page */
+
+body {
+    color: #C0C0C0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-snap-padding-top: 68px;
+    font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+
+}
+
+#block-region-side-post {
+    margin-bottom: 30px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: rgb(40, 40, 40);
+}
+
+::selection {
+    background-color: rgba(255,255,255,0.2);
+}
+
+#page-header {
+    visibility: hidden;
+    margin-top: 30px !important;
+}
+
+img {
+    filter: brightness(.7);
+    -webkit-filter: brightness(.7);
+}
+
+.carousel-inner {
+    filter: brightness(.7);
+    -webkit-filter: brightness(.7);
+}
+
+.block_action {
+    filter: contrast(5);
+    -webkit-filter: contrast(5);
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+    #instance-4-header {
+        font-size: 0.95em;
+    }
+}
+
+.block .header .title h2,
+.block h3.main {
+    color: #C0C0C0;
+}
+
+body .fa,
+p.tree_item.branch:before,
+.block .icon,
+p.tree_item.leaf a>.fa {
+    color: #C0C0C0;
+}
+
+p.tree_item.branch {
+    color: #C0C0C0;
+}
+
+#page-site-index p {
+    color: #C0C0C0;
+}
+
+#page #page-content #region-main,
+#page #page-content div[role=main],
+.pagelayout-redirect #page-content #region-main,
+.pagelayout-redirect #page-content div[role=main] {
+    background: transparent;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li {
+    background-color: rgb(40,40,40);
+    border-color: rgb(40,40,40);
+}
+.breadcrumb-nav ul.breadcrumb.style1 li:hover, .breadcrumb-nav ul.breadcrumb.style1 li:focus {
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+}
+.breadcrumb-nav ul.breadcrumb.style1 li:after {
+    border-left-color: rgb(0, 0, 0);
+}
+.breadcrumb-nav ul.breadcrumb.style1 li:hover:after {
+    border-left-color: rgb(0, 0, 0);
+}
+.breadcrumb-nav ul.breadcrumb.style1 li:hover span, .breadcrumb-nav ul.breadcrumb.style1 li:focus span, .breadcrumb-nav ul.breadcrumb.style1 li:hover a, .breadcrumb-nav ul.breadcrumb.style1 li:focus a, .breadcrumb-nav ul.breadcrumb.style1 li:hover a:before, .breadcrumb-nav ul.breadcrumb.style1 li:focus a:before {
+    color: rgb(230, 230, 230);
+}
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/") {
+/* Paused */
+
+/*
+
+    /* Message Area 
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea {
+        background-color: rgb(42,42,42);
+        border-radius: 0;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea input {
+        background-color: rgb(42,42,42);
+        border-radius: 0;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea.searching {
+        background-color: rgb(42,42,42);
+        border-radius: 0;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea.searching input {
+        background-color: rgb(42,42,42);
+        border-radius: 0;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .tabs .tab {
+        background-color: rgb(42,42,42);
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .tabs .tab.selected {
+        color: #fff;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .tabs .tab:hover {
+        color: #FF5D5D;
+    }
+
+    /* Notification Panel Settings 
+    .preferences-container .preference-table tr th:nth-child(even) {
+        background-color: rgb(32,32,32);
+    }
+
+    .preferences-container .preference-table tr td:nth-child(even), .table-hover tbody tr:hover>td, .table-hover tbody tr:hover>th{
+        background-color: rgb(32,32,32);
+    }
+
+    /* Update 2.3.1 
+
+
+    select.custom-select {
+        /* Quiz 
+        background-color: rgb(70,70,70);
+        color: #fff !important;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .card {
+        /* Calendar 
+        background-color: rgb(40,40,40);
+        border-color: rgb(40,40,40);
+    }
+
+    .card-header {
+        /* Calendar 
+        background-color: rgb(70,70,70);
+        border-color: rgb(40,40,40);
+    }
+
+    #single_button5aabbb5eafe6517 {
+        /* Calendar 
+        margin-bottom: 5px;
+    }
+
+    /* Update 2.3.3 
+    .list-group-item {
+        background-color: rgb(45,45,45);
+        border-color: rgb(45,45,45);
+        padding: 0;
+    }
+
+    ul.well {
+        background-color: rgb(45,45,45) !important;
+        border-color: rgb(45,45,45) !important;
+    }
+
+    h5.text-danger {
+        color: rgb(235,235,235);
+    }
+
+    .btn[disabled] {
+        background-color: rgb(42,42,42);
+        color: rgb(160,160,160);
+    }
+
+    .btn[disabled]:hover {
+        box-shadow: none;
+    }
+
+    .well-small {
+        padding: 9px;
+    }
+
+    hr {
+        border-top: none;
+        border-bottom: none;
+    }
+
+    div.event {
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+        background: linear-gradient(45deg, #cc2b5e, #753a88);
+    }
+
+    div.event a {
+        color: rgb(230, 230, 230);
+    }
+
+
+    .breadcrumb-nav ul.breadcrumb.style1 li:hover {
+        cursor: pointer;
+    }
+
+*/
+}
+
+@-moz-document url("https://times.taylors.edu.my/") {
+/* Front Page */
+
+body {
+    background: linear-gradient(45deg, #200122, #6f0000);
+}
+
+.frontpagecontent {
+    background-color: rgb(200, 200, 200);
+}
+
+#marketing-spots .marketing-spot {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 0;
+}
+
+.bor {
+    display: none;
+}
+
+#marketing-spots .marketing-spot h5 {
+    color: rgb(230, 230, 230);
+}
+}
+
+@-moz-document url("https://times.taylors.edu.my/login/index.php") {
+/* Login Page */
+
+    html {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;  
+        background: transparent;  
+    }
+
+    body {
+        background: linear-gradient(45deg, #200122, #6f0000);
+        height: 100vh;
+    }
+
+    #page #page-content #region-main {
+        border: 0;
+    }
+
+    .loginbox h2, .loginbox .subcontent {
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        font-weight: normal;
+    }
+
+    label {
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        color: rgb(200, 200, 200);
+    }
+
+    #page-login-index .loginbox .loginform .form-input input {
+        width: 380px;
+        padding: 0 5px;
+        height: 34px;
+        border-bottom: solid 0.2px grey;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+    }
+
+    #page-login-index .loginbox .loginform .form-input input:focus {
+        border-bottom: solid 2px rgb(229, 9, 20);
+    }
+
+    h2 {
+        margin-left: 0 !important;
+    }
+
+    #page-login-index #loginbtn {
+        font-family: Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 0;
+        background-color: rgb(255, 255, 255, 0.2);
+        background-image: none;
+        height: 40px;
+        border: 0;
+        width: 100%;
+        border-radius: 0;
+        font-size: 14px;
+        box-shadow: none;
+    }
+
+    .forgetpass a, .desc {
+        font-family: Arial, sans-serif;
+    }
+
+    .forgetpass a {
+        font-weight: 600;
+    }
+
+    #page-login-index .guestform input[type=submit]  {
+        font-family: Arial, sans-serif;
+        background-color: transparent;
+        background-image: none;
+        height: 30px;
+        border: 0;
+        border-radius: 0;
+        width: 220px;
+        margin: 0 35px;
+        color: rgb(230, 230, 230);
+        font-weight: 600;
+        box-shadow: none;
+    }
+
+    #page-login-index .guestform input[type=submit]:hover {
+        background-color: transparent;
+        background-image: none;
+        text-shadow: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    #page-login-index .loginbox .loginform .form-input input:-webkit-autofill {
+        -webkit-text-fill-color: #fff !important;
+    }
+
+    /* Version 3.0 */
+
+    #page-login-index .loginbox .subcontent, .loginbox h2 {
+        text-align: left;
+    }
+    #page-login-index .loginbox .subcontent .form-label {
+        width: 100%;
+        text-align: left;
+    }
+    #page-login-index .loginbox .loginform .form-input {
+        float: left;
+        width: 100%;
+    }
+
+    input:-webkit-autofill:hover
+    input:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0 100px white inset;
+        -webkit-text-fill-color: #f90;
+    }
+    @media only screen and (min-width: 768px) {
+    #page-login-index .content-only #region-main {
+        max-width: 460px;
+    }
+    }
+    #page-login-index #page {
+        margin: 0 auto !important;
+        max-width: 460px;
+    }
+
+
+    #page-login-index #page .subcontent.guestsub .desc {
+        text-align: center;                           }
+}
+
+@-moz-document url("https://times.taylors.edu.my/"), url("https://times.taylors.edu.my/login/index.php"), url-prefix("https://times.taylors.edu.my/my/"), url-prefix("https://times.taylors.edu.my/course/"), url-prefix("https://times.taylors.edu.my/calendar/"), url-prefix("https://times.taylors.edu.my/mod/"), url-prefix("https://times.taylors.edu.my/grade/"), url-prefix("https://times.taylors.edu.my/message/") {
+/* Nav Bar */
+
+/* 4.6 */
+
+    .popover-region-container {
+        z-index: 11;
+    }
+
+/* 4.5 */
+    .pagination ul>li>a, .pagination ul>li>span {
+        border: 0;
+    }
+
+    a:link, a:visited {
+        color: rgb(255,121,121);
+    }
+
+    a:hover {
+        color: rgb(255,170,170);
+    }
+
+    .navbar, .navbar-inner {
+        background-color: #400000;
+    }
+
+    .navbar-inner {
+        max-width: inherit;
+    }
+
+    .navbar .navbar-inner .brand {
+        display:none;
+    }
+
+    .container-fluid.navbar-inner {
+        padding: 0;
+    }
+
+    .navbar .navbar-inner .nav>li.dropdown a, 
+    .navbar .navbar-inner .nav>li>a, 
+    .navbar .navbar-inner .search-input-wrapper>div .fa {
+        color: rgb(230, 230, 230);
+    }
+
+    .navbar .navbar-inner .nav .dropdown .dropdown-menu ul > li {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .navbar .navbar-inner .nav>li.dropdown a:hover, 
+    .navbar .navbar-inner .nav>li>a:hover, 
+    .navbar .navbar-inner .search-input-wrapper>div .fa:hover, 
+    .navbar .navbar-inner .nav>li.dropdown a:focus, 
+    .navbar .navbar-inner .nav>li>a:focus, 
+    .navbar .navbar-inner .search-input-wrapper>div .fa:focus{
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+    }
+
+    #page-header {
+        border: 0;
+    }
+
+    .navbar .navbar-inner .dropdown-menu {
+        border: 0;
+        border-radius: 0;
+    }
+
+    .navbar .navbar-inner .nav>li.dropdown .dropdown-menu {
+        background-color: rgb(20, 20, 20);
+    }
+
+    .navbar .navbar-inner .nav>li.dropdown .dropdown-menu li>a {
+            color: rgb(240, 240, 240);
+    }
+
+    .navbar .navbar-inner .nav>li.dropdown .dropdown-menu li>a:hover {
+        background-color: rgb(30, 30, 30);
+        color: rgb(255, 255, 255);
+        border-bottom: 0;
+    }
+
+    .navbar .navbar-inner .dropdown-menu li>a:hover .fa {
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-inner .nav li.dropdown.open>.dropdown-toggle {
+        background: rgb(255, 255, 255, 0.2);
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-inner .brand {
+        margin-left: 20px;
+        padding: 14px 0;
+    }
+
+    .dropdown-menu {
+        padding: 0;
+    }
+
+    .dropdown-toggle,
+    .custom_menu {
+        font-size: 16px;
+    }
+
+    .navbar .count-container {
+        border-radius: 10px;
+        width: 10px;
+        text-align: center;
+        top: 20px;
+        right: 10px;
+    }
+
+    .content-item-container {
+        border-bottom: 0;
+    }
+
+    .content-item-container:hover {
+        background: rgb(60, 60, 60);
+    }
+ 
+    /* Used for Javascript */
+    #essentialnavbar {
+        transition: top 0.5s;
+    }
+
+    #essentialmenus .nav .dropdown-menu>ul>li {
+        font-size: 14px;
+    }
+
+    .navbar .nav>li>a {
+        padding: 24px 10px;
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown a.dropdown-toggle {
+        padding: 22.8px 15px;
+        background: linear-gradient(to right, #400000, #C31010);
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown a.dropdown-toggle:hover {
+        border-bottom: none;
+        background: linear-gradient(to right, #400000, #C31010);
+        color: rgb(255, 255, 255);
+    }
+
+    #essentialmenus .dropdown .dropdown-menu ul > li > a {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+
+    .navbar .navbar-inner .popover-region-toggle {
+        color: rgb(200, 200, 200);
+        height: 68px;
+        line-height: 68px;
+    }
+
+    .navbar .navbar-inner .popover-region-toggle:hover, 
+    .navbar .navbar-inner .popover-region-toggle:focus {
+        background-color: transparent;
+        color: rgb(150, 150, 150);
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown .dropdown-menu {
+        border: 0;
+        width: 220.86px;
+    }
+
+    .navbar .navbar-inner .usermenu .nav li.dropdown.open>.dropdown-toggle {
+        border-bottom: none;
+        background: linear-gradient(to right, #400000, #C31010);
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown .dropdown-submenu.preferences a.dropdown-toggle {
+        height: 40px;
+        line-height: 40px;
+        background-color: rgb(30, 30, 30) !important;
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown .dropdown-menu li > a {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    em {
+        font-style: normal;
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown .dropdown-submenu>a:after {
+        margin-top: 15px;
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown ul.pull-right a.dropdown-toggle {
+        background: rgb(50, 50, 50);
+    }
+
+    .navbar .navbar-inner .nav>li.dropdown .dropdown-menu li.dropdown-submenu:hover>a {
+        background-color: rgb(30, 30, 30);
+        color: rgb(255, 255, 255);
+    }
+
+    .navbar .navbar-inner .usermenu .dropdown .dropdown-submenu:hover >a:after {
+        border-right-color: rgb(0, 0, 0);
+    }
+
+    .navbar .pull-right>li>.dropdown-menu .dropdown-menu, 
+    .navbar .nav>li>.dropdown-menu.pull-right .dropdown-menu {
+        border-radius: 0;
+    }
+
+    .navbar .nav>li>.dropdown-menu.pull-right .dropdown-menu >  li > a {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+
+    .popover-region-container {
+        background-color: rgb(10, 10, 10);
+        border-color: rgb(50, 50, 50);
+        box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .popover-region-header-container {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 0;
+    }
+
+    h3.popover-region-header-text {
+        font-size: 16px;
+        margin-top: 8px;
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        font-weight: 700;
+        color: rgb(200, 200, 200);
+    }
+
+    .popover-region-footer-container {
+        background-color: rgb(38,38,38);
+        border-top: 0;
+    }
+
+    .see-all-link {
+        color: #C0C0C0 !important;
+    }
+
+    .see-all-link:hover {
+        color: #fff !important;
+    }
+
+    .popover-region-toggle::after {
+        display: none;
+    }
+
+    .newmessage-link {
+        text-decoration: underline;
+    }
+
+    .newmessage-link a:hover {
+        color: rgb(170, 170, 170);
+    }
+
+    .popover-region-footer-container:hover , 
+    .popover-region-seeall-text:hover , 
+    .popover-region-header-actions i:hover {
+        color: rgb(255, 255, 255);
+    }
+
+
+/* DashBoard Initial */
+
+    .breadcrumb-nav ul.breadcrumb.style1 li,
+    .breadcrumb-nav ul.breadcrumb.style1 li:hover, 
+    .breadcrumb-nav ul.breadcrumb.style1 li:focus {
+        background: transparent;
+        border: 0;
+        color: rgb(230, 230, 230);
+        font-size: 20px;
+    }
+
+    .breadcrumb-nav ul.breadcrumb.style1 li:first-of-type a:before {
+        color: rgb(230, 230, 230);
+    }
+
+    .breadcrumb-nav ul.breadcrumb.style1 li:first-of-type {
+        border-radius: 0;
+    }
+
+    .block .header .title h2, .block h3.main {
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        text-shadow: none;
+        font-weight: 700;
+    }
+
+    #page #page-content #region-main, .pagelayout-redirect #page-content #region-main, #page #page-content div[role="main"], 
+    .pagelayout-redirect #page-content div[role="main"] {
+        border-radius: 0;
+        border: 0;
+        padding-top: 10px;
+    }
+
+    .block_myoverview,
+    .block_navigation,
+    .block_badges,
+    .block_calendar_month,
+    .block_calendar_upcoming, 
+    .block_online_users {
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+        background-color: rgb(0, 0, 0);
+    } 
+
+    #block-region-side-pre .block {
+        background-color: rgb(0, 0, 0);
+        color: rgb(220, 220, 220);
+    }
+    #block-region-side-pre .block a,
+    #block-region-side-pre .block a:visited,
+    #block-region-side-pre .block .fa,
+    #block-region-side-pre .block .header .title h2,
+    #block-region-side-pre .block p.tree_item.branch {
+        color: rgb(192, 192, 192);
+    }
+    #block-region-side-pre .block a:focus,
+    #block-region-side-pre .block a:hover,
+    #block-region-side-pre .block .fa:focus,
+    #block-region-side-pre .block .fa:hover {
+        color: #FF5D5D;
+    }
+
+    .block .header .title {
+        border-bottom: 0;
+    }
+
+    .nav-tabs>li.active>a {
+        background-color: #BF0000;
+        border-color: #BF0000;
+        border-radius: 0;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-tabs {
+        border-bottom-color: #BF0000;
+    }
+    .nav-tabs>li>a:hover,
+    .nav-tabs>li>a:focus,
+    .nav-tabs>.active>a,
+    .nav-tabs>.active>a:hover,
+    .nav-tabs>.active>a:focus {
+        border-color: #fff;
+    }
+    body .btn-default.active,
+    body a.btn-default.active {
+        background-image: none;
+        background-color: #BF0000;
+    }
+    .btn {
+        background-color: rgb(42, 42, 42);
+        background-image: none;
+        text-shadow: none;
+        border-radius: 0;
+        border: 0;
+        color: #fff;
+    }
+    .btn:hover {
+        background-color: rgb(42, 42, 42);
+        background-image: none;
+        color: #fff;
+        box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-tabs>li.active>a:hover,
+    .nav-tabs>li>a:hover, .nav-tabs>li>a:focus {
+        background-color: rgb(229, 9, 20);
+        border-color: rgb(229, 9, 20);
+        color: rgb(255, 255, 255);
+    }
+
+    .back-to-top {
+        background-color: rgb(150, 150, 150, 0.5);
+        border-radius: 50px;
+        padding: 10px 16px;
+        top: 90%;
+    }
+
+    .back-to-top:hover {
+        background-color: rgb(200, 200, 200, 0.5);
+    }
+
+    .back-to-top>.fa:hover {
+            color: rgb(255, 255, 255);
+    }
+
+.content-item-container.unread {
+    background-color: rgb(70, 70, 70);
+    border: 0;
+}
+
+.content-item-container.unread:hover {
+    background-color: rgb(70, 70, 70);
+    border: 0;
+}
+
+.popover-region-messages .content-item-body h3 {
+    color: rgb(230, 230, 230);
+}
+
+
+/* Footer */
+
+    #page-footer {
+        background: transparent;
+        color: rgb(200, 200, 200);
+        border: none;
+    }
+
+    footer > .container-fluid > .footerlinks hr,
+    .footerblocks,
+    .tool_usertours-resettourcontainer.span12 {
+        display: none;
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/my/") {
+/* DashBoard Cleanup  */
+
+    /* Course Overview */
+
+    body .btn-default.active, 
+    body a.btn-default.active {
+        text-shadow: none;
+        box-shadow: none;
+    }
+
+    body .btn-default, body a.btn-default {
+        background-color: rgb(30, 30, 30);
+        box-shadow: none;
+    }
+
+    .btn-group>.btn {
+        background-image: none;
+    }
+
+    .btn-group>.btn:hover {
+        background-image: none;
+        text-shadow: none;
+        background-color: rgb(60, 60, 60);
+    }
+
+    .btn-group>.btn:first-child {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .btn-group>.btn:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .block_myoverview .well {
+        background-color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);
+        border-radius: 0;
+        margin-bottom: 5px;
+        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-tabs>li>a {
+        margin-right: 0px;
+        border-radius: 0;
+        background-color: rgb(30, 30, 30);
+        border-top-color: rgb(30, 30, 30);
+        border-left-color: rgb(30, 30, 30);
+        border-right-color: rgb(30, 30, 30);
+        border-bottom-color: #BF0000;
+    }
+
+    .nav-tabs>li.active>a:focus {
+        background-color: rgb(229, 9, 20);
+        border-color: rgb(229, 9, 20);
+        color: rgb(255, 255, 255);
+    }
+
+    .progress-chart-container .progress-doughnut {
+        border-color: rgb(30, 30, 30);
+    }
+
+    .progress-chart-container .progress-doughnut .progress-indicator svg .circle {
+        stroke: rgb(70, 70, 70);
+    }
+
+    .progress-chart-container .no-progress {
+    background: rgb(30, 30, 30);
+    }
+
+    .progress-chart-container .progress-doughnut .progress-text.has-percent {
+        color: rgb(200, 200, 200);
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/my/") {
+/* Dashboard Upgrade - Full Width Adjustment */
+
+#page-my-index {
+    background: rgb(0, 0, 0);
+}
+
+#page, .pagelayout-redirect {
+    padding: 0;
+}
+
+#page-header {
+    margin-top: 0 !important;
+    padding-top: 20px;
+}
+
+.container-fluid {
+    max-width: none;
+    padding: 0;
+}
+
+#page-navbar {
+    background: rgb(0, 0, 0);
+}
+
+.row-fluid .span12 {
+    width: 100%;
+    background: rgb(0, 0, 0);
+}
+
+.row-fluid .span9 {
+    width: 100%;
+}
+
+.row-fluid .span3 {
+    width: 100%;
+    margin-left: 0;
+}
+
+/* Announcements */
+
+.breadcrumb-nav ul.breadcrumb.style1 {
+    float: none;
+    text-align: center;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li {
+    float: none;
+}
+
+.breadcrumb-button .singlebutton {
+    float: none;
+    text-align: center;
+}
+
+.breadcrumb-button .singlebutton:focus {
+    outline: none;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 {
+    height: 60px;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li:last-of-type {
+    padding: 0;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li:first-of-type {
+    padding: 0;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li:first-of-type a {
+    margin: 0;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li a {
+    padding: 0;
+    font-size: 36px;
+    font-family: "Google Sans", Arial, sans-serif;
+    line-height: 60px;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li span {
+    margin: 0;
+}
+
+.breadcrumb-nav ul.breadcrumb.style1 li:first-of-type a:before {
+    display: none;
+}
+
+.singlebutton div {
+    margin: 0;
+}
+
+.breadcrumb-button .singlebutton input[type="submit"] {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: rgb(180, 180, 180);
+    font-family: "Google Sans", Arial, sans-serif;
+    font-size: 14px;
+}
+
+ .block.span12 {
+        margin-top: 15px;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-top: 0;
+        padding-top: 20px;
+        border-radius: 0;
+        box-shadow: none;
+        background: linear-gradient(to bottom, #200122, #6f0000);;
+    }
+
+div.header {
+    text-align: center;
+}
+
+.block .header .block_action,
+.block .header .fa-list-alt:before {
+    display: none;
+}
+
+.block .header .title h2, .block h3.main {
+    font-family: "Google Sans", Arial, sans-serif;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+.no-overflow iframe {
+    margin-left: calc((100% - 1100px) / 2);
+}
+
+/* Upcoming Block (4.7.1)*/
+
+.block_calendar_upcoming {
+    width: 100%;
+    background: rgb(0, 0, 0) !important;
+}
+
+.block_calendar_upcoming .title {
+    display: none;
+}
+
+.block_calendar_upcoming .fa-calendar:before {
+    display: none;
+}
+
+div.event {
+    width: auto; /* 4.7.2 */
+    height: 40px;
+    padding: 10px 0;
+}
+
+
+/* Course Search */
+
+.row-fluid .span8 {
+    width: calc(100% - 300px); /* 4.7.1 */
+    padding: 20px;
+}
+
+#main-and-pre:before {
+    content:'Course Overview';
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-family: "Google Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.row-fluid .span8 .title {
+    display: none;
+}
+
+.courseitemsearch p {
+    font-size: 18px;
+    width: 130px;
+    font-family: "Google Sans", Arial, sans-serif;
+}
+
+#courseitemsearch {
+    width: calc(100% - 140px);
+    height: 35px;
+    border-left: solid 1px rgb(60, 60, 60);
+    border-top: solid 1px rgb(60, 60, 60);
+    border-bottom: solid 1px rgb(60, 60, 60);
+    border-right: solid 1px rgb(60, 60, 60);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+    font-size: 14px;
+    border-radius: 0;
+    padding: 0 0 0 10px;
+    background: rgb(10, 10, 10);
+}
+
+#courseitemsearch:hover {
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+#courseitemsearch:focus {
+    outline: 0;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+}
+
+#courseitemsearchresults input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    display: block;
+    float: left;
+    
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-appearance: none;
+}
+
+#courseitemsearchresults input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+#courseitemsearchresults input[type="checkbox"]:focus {
+    outline: none;
+}
+
+#courseitemsearchresults input[type="checkbox"]:after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    position: relative;
+    content: "";
+    top: 4px;
+    left: 4px;
+    
+    border-radius: 50px;
+    background: none;
+}
+
+#courseitemsearchresults input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+
+#courseitemsearchresults input[type="checkbox"]:checked:after {
+  left: 8px;
+  top: 0px;
+  width: 4px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#courseitemsearchresults label{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+    font-family: "Google Sans", Arial, sans-serif;
+    height: 20px;
+    line-height: 20px;
+}
+
+.block_myoverview {
+    margin-top: 20px;
+}
+
+.row-fluid .span4 {
+    width: 200px;
+    margin-right: 100px;
+    margin-top: 170px;
+}
+
+.row-fluid .span4 .fa-sitemap:before {
+    display: none;
+}
+
+.block_myoverview .pagination ul>li>a, 
+.block_myoverview .pagination ul>li>span {
+    background: rgb(30, 30, 30);
+}
+
+.block_myoverview .pagination ul>.active>a, 
+.block_myoverview .pagination ul>.active>span {
+    color: rgb(230, 230, 230);
+}
+
+/* Badges */
+
+.block_badges {
+    background: linear-gradient(to right, #200122, #6f0000);;
+    padding: 40px 0;
+    margin-bottom: 0;
+    margin-top: 6em;
+}
+
+.block_badges .fa-bars:before, .fa-navicon:before, .fa-reorder:before {
+    display: none;
+}
+
+.block_badges .title {
+    height: 40px;
+    line-height: 40px;
+}
+
+.block_badges .content {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Fourth Div */
+
+.block_calendar_month {
+    width: 100%;
+    height: 100vh;
+}
+
+.block_calendar_month>.header {
+    display: none;    
+}
+
+.block_calendar_month .fa-calendar:before {
+    display: none;
+}
+
+.block .minicalendar {
+    width: 770px;
+    max-width: 770px;
+}
+
+ /* MiniCalendar */
+
+.block_calendar_month .content {
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .block .minicalendar td.duration_course.duration_finish {
+        background-color: rgb(30, 30, 30);
+    }
+    .minicalendar .calendar_event_course,
+    .minicalendar .calendar_event_group,
+    .minicalendar .calendar_event_site,
+    .minicalendar .calendar_event_user {
+        border-radius: 0;
+    }
+    .block .minicalendar td.duration_course {
+        border-color: #fff;
+    }
+
+.block .calendar-controls .next,
+.block .calendar-controls .previous {
+    height: 40px;
+    line-height: 40px;
+}
+
+.block .calendar-controls .current {
+    height: 40px;
+    line-height: 40px;
+}
+
+.block .calendar-controls .current a {
+    font-size: 18px;
+    font-family: "Google Sans", Arial, sans-serif;
+}
+
+    .minicalendar th, .block .minicalendar td {
+        padding: 0;
+        font-size: 18px;
+        font-family: "Google Sans", Arial, sans-serif;
+    }
+
+    .block .minicalendar thead>tr, .block .minicalendar thead>tr>th {
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+
+    .block .minicalendar tbody>tr, .block .minicalendar tbody>tr>td {
+        border: solid 1px rgb(30, 30, 30);
+        width: 100px;
+        height: 70px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 10px;
+        text-align: left;
+    }
+
+    .block .minicalendar td.weekend {
+        font-style: normal;
+        color: rgb(140, 140, 140);
+    }
+
+    abbr[title], abbr[data-original-title] {
+        border-bottom: 0;
+        text-decoration: none;
+        font-family: "Google Sans", Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .day.text-center.today {
+        background: linear-gradient(45deg, #333333, #dd1818);
+    }
+
+    .day.text-center.today a {
+        line-height: 70px;
+        color: rgb(255, 255, 255);
+    }
+
+.calendar_event_course {
+    background-color: transparent;
+    line-height: 70px;
+}
+
+.calendar_event_course a {
+    color: rgb(252, 162, 190);
+}
+
+/* Final Div */
+
+.block_online_users {
+    background: linear-gradient(to right, #200122, #6f0000);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.block_online_users span.fa.fa-users:before {
+    display: none;
+}
+
+.block .list {
+    width: calc(100vw - 20%);
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.block_online_users ul.list {
+    height: calc(100vh - 86px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.block_online_users ul.list::-webkit-scrollbar {
+    width: 15px;
+    display: block;
+}
+
+.block_online_users ul.list::-webkit-scrollbar-track-piece {
+    padding: 10px;
+    background: rgb(40, 40, 40);
+    background-repeat: no-repeat;
+}
+
+.block_online_users ul.list::-webkit-scrollbar-thumb {
+    background: rgb(70, 70, 70);
+}
+
+.listentry {
+    height: 40px;
+    line-height: 40px;
+}
+
+.listentry a {
+    font-size: 16px;
+    font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+}
+
+/* Update 4.7.2 */
+
+@media (min-width: 1200px) {
+.row-fluid [class*="span"],
+.row-fluid [class*="span"] {
+    float: none;
+    }
+}
+#block-region-page-top {
+    width: 350px;
+    float: left;
+}
+
+#block-region-page-top .block_calendar_upcoming > .content {
+
+    padding: 0 20px 10px;
+    background-color: rgb(40, 40, 40);
+}
+
+.span8.desktop-first-column {
+    float: left;
+}
+
+.span8.desktop-first-column > #region-main {
+    margin-left: 370px;
+}
+
+.nav.nav-tabs {
+    max-height: 38px;
+}
+
+#block-region-side-pre {
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.block_calendar_upcoming {
+    padding-top: 0 !important;
+}
+
+.block_calendar_upcoming hr {
+    border-color: rgb(80, 80, 80);
+}
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/course/") {
+/* Courses */
+
+    /* 4.0 Full Width Update */
+.container-fluid {
+    max-width: none;
+}
+
+body { 
+    background: rgb(0, 0, 0);
+}
+
+
+    /* Change Link Colours */
+    a:link, a:visited {
+        color: rgb(232,255,0);
+    }
+
+    a:hover {
+        color: rgb(242,255,110);
+    }
+
+    /* Buttons */
+    /* Primary Colour, change background colour only */
+    .singlebutton input[type=submit] {
+        background-color: rgb(169,180,0);
+        background-image: none;
+        height: 30px;
+        border: 0;
+        border-radius: 0;
+        width: 150px;
+        margin-left: 15px;
+    }
+    .singlebutton input:hover[type=submit] {
+        background-color: rgb(169,180,0);
+        background-image: none;
+    }
+    /* END */
+
+    .navbar .navbar-inner .nav li.dropdown.open>.dropdown-toggle {
+        background-color: rgba(255,255,255,0.2);
+    }
+
+    /* Others */
+    #block-region-side-pre .block {
+        border-bottom: 0;
+    }
+
+    #page-content h1 {
+        font-family: Arial, sans-serif;
+    }
+
+    .bor {
+        display: none;
+    }
+
+    .course-content ul li.section.main {
+        background-image: none;
+    }
+
+    .completionprogress {
+        padding-top: 10px;
+    }
+
+    #page-content h1 {
+        text-align: center;
+        padding: 15px 0;
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+    }
+
+    body .course-content ul.topics li.section {
+        background-color: rgb(20, 20, 20);
+        border-bottom: solid 1px rgb(50, 50, 50);
+    }
+
+    .course-content ul li.section.main.current {
+        box-shadow: none;
+        border-radius: 0px;
+        border-bottom: solid 1px rgb(50, 50, 50);
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    /* Side Blocks (4.7) */
+
+    .block_search_forums, .block_news_items {
+        background-color: rgb(0, 0, 0);
+        border-color: rgb(0, 0, 0);
+    }
+
+    body button {
+            background-color: #a80000;
+            background-image: none;
+            border: none;
+            color: #fff;
+            box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+
+    body button:hover {
+            background-color: #c61b1b;
+            background-image: none;
+        }
+
+    /* Smaller Res */
+
+    @media (max-width: 979px) {
+
+        #page-top-header, #page-navbar, #page-navbar .breadcrumb-nav {
+            width: 100%;
+            height: 32px;
+        }
+
+        #page-content h1 {
+            padding-top: 0;
+        }
+
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/grade/") {
+/* Grades */
+
+body { 
+    background: rgb(0, 0, 0);
+}
+
+    #page-content h1 {
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    form {
+        background-color: rgb(20, 20, 20);
+        text-align: right;
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+
+    .bor {
+        display: none;
+    }
+
+    h2 {
+        background-color: rgb(20, 20, 20);
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    table {
+        background-color: rgb(20, 20, 20);
+        margin-top: -20px;
+    }
+
+    table#explaincaps tbody > tr:nth-child(odd) > td,
+    table#defineroletable tbody > tr:nth-child(odd) > td,
+    table.grading-report tbody > tr:nth-child(odd) > td,
+    table#listdirectories tbody > tr:nth-child(odd) > td,
+    table.rolecaps tbody > tr:nth-child(odd) > td,
+    table.userenrolment tbody > tr:nth-child(odd) > td,
+    table#form tbody > tr:nth-child(odd) > td,
+    form#movecourses table tbody > tr:nth-child(odd) > td,
+    #page-admin-course-index .editcourse tbody > tr:nth-child(odd) > td,
+    .forumheaderlist tbody > tr:nth-child(odd) > td,
+    table.flexible tbody > tr:nth-child(odd) > td,
+    .generaltable tbody > tr:nth-child(odd) > td,
+    table#explaincaps tbody > tr:nth-child(odd) > th,
+    table#defineroletable tbody > tr:nth-child(odd) > th,
+    table.grading-report tbody > tr:nth-child(odd) > th,
+    table#listdirectories tbody > tr:nth-child(odd) > th,
+    table.rolecaps tbody > tr:nth-child(odd) > th,
+    table.userenrolment tbody > tr:nth-child(odd) > th,
+    table#form tbody > tr:nth-child(odd) > th,
+    form#movecourses table tbody > tr:nth-child(odd) > th,
+    #page-admin-course-index .editcourse tbody > tr:nth-child(odd) > th,
+    .forumheaderlist tbody > tr:nth-child(odd) > th,
+    table.flexible tbody > tr:nth-child(odd) > th,
+    .generaltable tbody>tr:nth-child(odd)>th {
+        background-color: #787878;
+        border-color: #787878;
+        color: rgb(220,220,220);
+    }
+    .generaltable td,
+    .generaltable th,
+    table.flexible td,
+    table.flexible th {
+        border: 0;
+    }
+    #page-grade-report-overview-index #overview-grade a:hover {
+        color: rgb(255, 255, 255);
+        background: transparent;
+    }
+
+    .path-grade-report-user .user-grade.generaltable .levelodd {
+        background-color: rgb(20, 20, 20);
+        color: rgb(230, 230, 230);
+    }
+
+    .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.levelodd,
+    .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.leveleven {
+        color: rgb(192, 192, 192);
+    }
+
+    .path-gra de-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.leveleven a:not(.btn):not([role="menuitem"]), .path-grade-edit-tree .setup-                grades.generaltable>tbody>tr:nth-child(odd)>th.leveleven a:not(.btn):not([role="menuitem"]), .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.leveleven a:not(.btn):not([role="menuitem"]), .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.leveleven a:not(.btn):not([role="menuitem"]), .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.levelodd a:not(.btn):not([role="menuitem"]), .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>th.levelodd a:not(.btn):not([role="menuitem"]), .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.levelodd a:not(.btn):not([role="menuitem"]), .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.levelodd a:not(.btn):not([role="menuitem"]), .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.leveleven a:not(.btn):not([role="menuitem"]):visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>th.leveleven a:not(.btn):not([role="menuitem"]):visited, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.leveleven a:not(.btn):not([role="menuitem"]):visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.leveleven a:not(.btn):not([role="menuitem"]):visited, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.levelodd a:not(.btn):not([role="menuitem"]):visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>th.levelodd a:not(.btn):not([role="menuitem"]):visited, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.levelodd a:not(.btn):not([role="menuitem"]):visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.levelodd a:not(.btn):not([role="menuitem"]):visited, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.leveleven a.toggle-display, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>th.leveleven a.toggle-display, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.leveleven a.toggle-display, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.leveleven a.toggle-display, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.levelodd a.toggle-display, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>th.levelodd a.toggle-display, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.levelodd a.toggle-display, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.levelodd a.toggle-display, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.leveleven a.toggle-display:visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>th.leveleven a.toggle-display:visited, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.leveleven a.toggle-display:visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.leveleven a.toggle-display:visited, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>th.levelodd a.toggle-display:visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>th.levelodd a.toggle-display:visited, .path-grade-report-user .user-grade.generaltable>tbody>tr:nth-child(odd)>td.levelodd a.toggle-display:visited, .path-grade-edit-tree .setup-grades.generaltable>tbody>tr:nth-child(odd)>td.levelodd a.toggle-display:visited {
+        color: #C0C0C0;
+    }
+
+    a {
+        color: #C0C0C0;
+    }
+
+    select.custom-select {
+        background-color: rgb(229, 9, 20);
+        border-radius: 10px;
+    }
+
+    #inst4, #inst5 {
+        border: 0;
+    }
+
+    /* All Subjects */
+
+    table.flexible tbody > tr:nth-child(odd) > td, .generaltable tbody >           tr:nth-child(odd) > td {
+        background-color: rgb(20, 20, 20);    
+    }
+
+    table.flexible tbody>tr:nth-child(odd)>td a:not(.btn):not([role="menuitem"]), .generaltable tbody>tr:nth-child(odd)>td a:not(.btn):not([role="menuitem"]) {
+        color: rgb(255, 255, 255);
+    }
+
+/* Smaller Res */
+
+@media (max-width: 979px) {
+    
+    .row-fluid .span9 {
+        width: 100%;
+    }
+    
+}
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/calendar/") {
+/* Calendar */
+
+body { 
+    background: rgb(0, 0, 0);
+}
+
+    .calendar_event_site {
+        background-color: rgb(21,99,0);
+    }
+
+    .calendar_event_category {
+        background-color: rgb(108,0,108);
+    }
+
+    .calendar_event_group {
+        background-color: rgb(109,78,0);
+    }
+
+    .calendar_event_user {
+        background-color: rgb(0,76,110);
+    }
+
+    table.calendarmonth.calendartable {
+        background-color: rgb(45,45,45);
+    }
+
+    .maincalendar .calendarmonth td, .maincalendar .calendarmonth th {
+        border-left: solid 1px rgb(70,70,70);
+        border-right: solid 1px rgb(70,70,70);
+    }
+
+    .maincalendar .calendarmonth th {
+        border-top: solid 1px rgb(70,70,70);
+        border-bottom: solid 1px rgb(45,45,45);
+    }
+
+    .maincalendar .calendarmonth td {
+        border-bottom: solid 1px rgb(70,70,70);
+    }
+
+    .path-calendar .calendartable th, .path-calendar .calendartable td {
+        text-align: left;
+        padding-left: 5px;
+    }
+
+    .path-calendar .calendartable td {
+        color: rgb(255,255,255);
+    }
+
+    .path-calendar .calendartable th {
+        padding-left: 3px;
+    }
+
+    table.calendartable div.hidden-sm-down > a {
+        color: rgb(255,255,255) !important;
+    }
+
+    div.maincalendar button.btn-default[type=submit] {
+        margin-top: 15px;
+    }
+
+.path-calendar .maincalendar .eventlist .event .description {
+    background: rgb(40, 40, 40);
+}
+
+body button, body .btn-default {
+    background-color: rgb(229, 9, 20);
+    background-image: none;
+}
+
+    /* MiniCalendar */
+
+    .block {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom-color: rgb(100, 100, 100);
+        border-radius: 0;
+    }
+
+    .minicalendar th, .block .minicalendar td {
+        border: solid 1px rgb(70,70,70);
+    }
+
+    .block .minicalendar td.weekend {
+        font-style: normal;
+        color: rgb(255,255,255);
+    }
+
+    abbr[title], abbr[data-original-title] {
+        border-bottom: 0;
+        text-decoration: none;
+    }
+
+.calendar_event_course {
+    background: rgb(100, 100, 100);
+    border-radius: 0;
+}
+
+/* 2.7.1 */
+
+   select.custom-select {
+        background-color: rgb(229, 9, 20);
+        border-radius: 10px;
+        border: none;
+        color: rgb(230, 230, 230);
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/mod/turnitintooltwo/") {
+/* Turnitin */
+
+body { 
+    background: rgb(0, 0, 0);
+}
+
+    #page-content h1 {
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    div.bor {
+        display: none;
+    }
+
+    .groupselector {
+        float: right;
+        margin-top: 10px;
+    }
+
+    .ui-tabs {
+        padding: 0;
+    }
+
+    .nav-tabs>li.active>a {
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-tabs>li>a:hover,
+    .nav-tabs>.active>a, .nav-tabs>.active>a:hover {
+        background: rgb(229, 9, 20) ;
+        border: rgb(229, 9, 20);
+    }
+
+    .ui-widget-content, .ui-widget-header {
+        background-color: rgb(25, 25, 25) !important;
+        background-image: none !important;
+        color: rgb(255, 255, 255);
+    }
+
+    .ui-tabs .ui-tabs-nav {
+        padding: 0 !important;
+        background-color: rgb(80, 7, 10) !important;
+    }
+
+    .ui-corner-all {
+        border-radius: 0;
+    }
+
+    .ui-state-active, 
+    .ui-widget-content .ui-state-active, 
+    .ui-widget-header .ui-state-active {
+        background-image: none;
+        background-color: rgb(229, 9, 20);
+        border-radius: 0;
+
+    }
+
+    .ui-tabs .ui-tabs-nav li a {
+        padding-left: 30px;
+        padding-right: 30px;
+        color: rgb(255, 255, 255);
+    }
+
+    .partDetails {
+        border: 0;
+    }
+
+    .partDetails th {
+        border-bottom: 0;
+    }
+
+    .partDetails tr {
+        border-right: 0;
+    }
+
+    .partDetails td {
+        border-left: 0;
+        border-right: 0;
+        border-bottom-color: rgb(100, 100, 100);
+    }
+
+    .partDetails .introduction {
+        border-bottom: 0;
+    }
+
+    .listbar, .listbar input, .listbar select {
+        background-color: rgb(25, 25, 25);
+        border-left-color: rgb(25, 25, 25);
+        border-right-color: rgb(25, 25, 25);
+        border-top-color: rgb(25, 25, 25);
+        border-bottom-color: rgb(70, 70, 70);
+    }
+
+    .mod_turnitintooltwo .refresh_link {
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        font-size: 13px;
+        background-color: rgb(229, 9, 20, 0.7);
+
+    }
+
+    body .fa, body .fa:hover {
+        color: rgb(255, 255, 255);
+    }
+
+    .mod_turnitintooltwo .refresh_link:hover {
+        background-color: rgb(229, 9, 20, 1);
+    }
+
+    .submissionsDataTable,
+    table.dataTable.no-footer {
+        border: 0;
+    }
+
+    .submissionsDataTable .odd,
+    .submissionsDataTable .odd .sorting_1 {
+        background-color: rgb(25, 25, 25) !important;
+    }
+
+    table.dataTable.no-footer {
+        border-bottom-color: rgb(255, 255, 255);
+    }
+
+    #tii_digital_receipt_box {
+        background-color: rgb(30, 30, 30);
+    }
+
+    .mform legend a {
+        color: rgb(255, 255, 255);
+    }
+
+    .tii_checkagainstnote, .tii_genspeednot {
+        background-color: rgb(3, 132, 207);
+        border-color: rgb(3, 132, 207);
+        color: rgb(240, 240, 240);
+    }
+
+    select {
+        background-color: rgb(50, 50, 50);
+        color: rgb(255, 255, 255);
+    }
+
+    input#id_submitbutton {
+        background-color: rgb(229, 9, 20);
+        background-image: none;
+        box-shadow: none;
+        padding: 10px 20px;
+    }
+
+    input#id_submitbutton:hover {
+        background-color: rgb(126, 8, 14);
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/") {
+/* Dock */
+
+    .has_dock .navbar .navbar-inner {
+        padding-left: 42px;
+    }
+
+    body.has_dock #dock {
+        background: rgb(15, 15, 15);
+    }
+
+    #dock .dockedtitle {
+        background: rgb(30, 30, 30);
+        border: 0;
+        border-radius: 0;
+        text-shadow: none;
+        box-shadow: none;
+        width: auto;
+    }
+
+    #dock .dockeditem:focus {
+        outline: none;
+    }
+
+    body.has_dock #dock .dockedtitle {
+        border: 0;
+        margin: 0;
+    }
+
+    body.has_dock #dockeditempanel .dockeditempanel_hd {
+        border-bottom-color: rgb(50, 50, 50);
+    }
+
+    body.has_dock #dock .dockedtitle h2 {
+        color: rgb(220, 220, 220);
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        font-size: 12px !important;   
+        background: inherit;
+    }
+
+    body.has_dock #dock .dockedtitle:hover, body.has_dock #dock .dockedtitle:focus, body.has_dock #dock .dockedtitle:active, body.has_dock #dock .dockedtitle.active, body.has_dock #dock .dockedtitle.disabled, body.has_dock #dock .dockedtitle[disabled] {
+        background: rgb(50, 50, 50);
+    }
+
+    body.has_dock #dockeditempanel .dockeditempanel_content {
+        background: rgb(15, 15, 15);
+        border: 0;
+        border-radius: 5px;
+        box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    body.has_dock #dock .dockeditempanel_hd h2 {
+        color: rgb(220, 220, 220);
+        font-family: "Google Sans", "Product Sans", Arial, sans-serif;
+        text-shadow: none;
+    }
+
+    .dockeditempanel_bd .block_navigation,
+    .dockeditempanel_bd .block_badges, 
+    .dockeditempanel_bd .block_calendar_month, 
+    .dockeditempanel_bd .block_calendar_upcoming, 
+    .dockeditempanel_bd .block_online_users {
+        background: rgb(15, 15, 15);
+    }
+
+    body.has_dock #dock .controls {
+        bottom: 10px;
+    }
+
+    body.has_dock #dock .controls img {
+        background: transparent;
+        filter: brightness(1.2);
+        width: 22px;
+        border-radius: 0;
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/message/index.php") {
+/* Message Block */
+
+/* 4.6 */
+
+    .messaging-area-container .messaging-area .contacts-area .contacts .contact,
+    .messaging-area-container .messaging-area .contacts-area .contacts .contact .picture {
+        border-bottom: none;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .contacts .contact:hover {
+        background-color: rgb(30, 30, 30);
+    }
+
+.messaging-area-container .messaging-area .messages-area.editing .messages .message[aria-checked="false"] .content:hover {
+    background-color: rgb(30, 30, 30);
+}
+
+.messaging-area-container .messaging-area .messages-area .response .delete-confirmation .btn.btn-link.confirm {
+    border-color: rgb(100, 100, 100);
+}
+
+.messaging-area-container .messaging-area .messages-area .response .delete-confirmation .btn.btn-link.confirm:hover {
+    background-color: rgb(229, 9, 20);
+    border-color: rgb(229, 9, 20);
+}
+
+
+/* 4.5 */
+
+    body {
+        background: rgb(0, 0, 0);
+    }
+
+    .messaging-area-container .messaging-area {
+        border-color: rgb(50, 50, 50);
+        border-radius: 0;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area {
+        border-right-color: rgb(50, 50, 50);
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea,
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea:hover {
+        background: rgb(25, 25, 25) !important;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea input,
+    .messaging-area-container .messaging-area .contacts-area .searchtextarea input:hover {
+        background: rgb(25, 25, 25) !important;
+    }
+
+    .messaging-area-container .messaging-area .messages-area .messages-header {
+        background: rgb(25, 25, 25);
+        border: 0;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .tabs {
+        border-top-color: rgb(50, 50, 50);
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .tabs .tab {
+        background: rgb(30, 30, 30);
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .tabs .tab.selected {
+        color: rgb(150, 150, 150);
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .tabs .tab:hover {
+        color: rgb(220, 220, 220);
+    }
+
+    .messaging-area-container .messaging-area .messages-area .messages .message .content {
+        max-width: 100%;
+        border: 0;
+    }
+
+    .messaging-area-container .messaging-area .contacts-area .contacts .contact.selected {
+        background: linear-gradient(to left, #660b01, #1f1c18);
+    }
+
+    .messaging-area-container .messaging-area.hide-messages .contacts-area .contact.selected,
+    .messaging-area-container .messaging-area.hide-messages .contacts-area .contact.selected, .messaging-area-container .messaging-area.hide-messages .contacts-area .contact.selected .picture {
+        border: 0;
+    }
+
+    .name .btn, .actions .btn {
+        background: transparent;
+    }
+
+    .name .btn.btn-link {
+        font-weight: 600;
+        color: rgb(220, 220, 220);
+    }
+
+    .actions .btn.btn-link {
+        color: rgb(220, 220, 220);
+    }
+
+    .name .btn.btn-link:hover, .actions .btn:hover {
+        background: transparent;
+        text-decoration:  none;
+    }
+
+    .messaging-area-container .messaging-area .messages-area .response {
+        background: rgb(30, 30, 30) !important;
+        border-top-color: rgb(50, 50, 50);
+        height: 50px;
+    }
+
+    .messaging-area-container .messaging-area .messages-area .response .message-box .message-text-container textarea {
+        background: rgb(30, 30, 30) !important;
+    }
+
+    .send-button-container .btn.btn-link {
+        background: rgb(30, 30, 30);
+        color: rgb(220, 220, 220);
+    }
+
+    .send-button-container .btn.btn-link:hover {
+        text-decoration: none;
+        box-shadow: none;
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/mod/forum/") {
+/* Forums */
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+.forumpost, .forumheaderlist {
+    background: rgb(0, 0, 0);
+}
+
+.singleselect form, .singleselect select {
+    background: rgb(30, 30, 30);
+}
+
+.form-inline select {
+    background-color: rgb(30, 30, 30);
+}
+
+
+.path-mod-forum :target~.forumpost:before {
+    background-color: #930000;
+}
+
+.forumpost, .forumheaderlist {
+    border-radius: 0;
+}
+
+body .btn-default, body a.btn-default {
+        background-color: rgb(229, 9, 20);
+        background-image: none;
+        box-shadow: none;
+        padding: 10px 20px;
+    }
+
+body .btn-default:hover, body a.btn-default:hover {
+    background-color: rgb(223, 34, 43);
+    background-image: none;
+}
+
+/* Participants (4.7.1) */
+
+#custom_menu_participants .participants {
+    max-height: 30px; /* current known issue */
+}
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/mod/aculearn/") {
+/* Video and Audio Players */
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+.bor {
+    visibility: hidden;
+}
+
+select {
+        background-color: rgb(50, 50, 50);
+        color: rgb(255, 255, 255);
+    }
+
+    body .btn-default,
+    body a.btn-default, 
+    body input[type="button"] {
+        background-image: none;
+        background-color: #BF0000;
+    }
+
+    .btn,
+    body input[type="button"] {
+        text-shadow: none;
+        border-radius: 0;
+        border: 0;
+        color: #fff;
+    }
+    .body .btn-default:hover,
+    body a.btn-default:hover, 
+    body input[type="button"]:hover,
+    body button {
+        background-color: #a80000;
+        background-image: none;
+        color: #fff;
+        box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+/* Times 4.5 */
+/* Video Player */
+
+    .video-js div.vjs-control-bar {
+        background: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0,0.7));
+        height: 36px;
+    }
+
+    .vjs-control-bar > div:nth-child(6) {
+        height: auto;
+    }
+
+    .vjs-button>.vjs-icon-placeholder:before {
+        line-height: 36px;
+        font-size: 2.5em;
+    }
+
+    .video-js .vjs-progress-control {
+        width: 100%;
+        z-index: 99;
+        bottom: 40px;
+        position: absolute;
+    }
+
+    .video-js .vjs-progress-holder {
+        height: 2.5px;
+        border-radius: 50px;
+    }
+
+    .video-js .vjs-progress-holder:hover {
+        height: 5px;
+    }
+
+    .video-js .vjs-slider {
+        background: rgb(0, 0, 0, 0.1);
+    }
+
+    .video-js .vjs-load-progress,
+    .video-js .vjs-load-progress div {
+        background: rgb(0, 0, 0, 0.07);
+    }
+
+    .video-js .vjs-control-text {
+        border-radius: 50px;
+    }
+
+    .video-js .vjs-play-progress {
+        background-color: #f00;
+    }
+
+    .video-js .vjs-play-progress:before {
+        display: none;
+    }
+
+    .video-js .vjs-play-progress:before:hover {
+        display: block;
+    }
+
+    body .vjs-button:hover {
+        background: transparent !important;
+    }
+
+    .video-js .vjs-volume-bar {
+        margin: 16px 0;
+    }
+
+    .video-js .vjs-fullscreen-control {
+        position: absolute;
+        right: 0;
+    }
+
+    .video-js .vjs-time-control {
+        position: absolute;
+        right: 36px;
+        line-height: 36px;
+        font-size: 14px;
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/") {
+/* Smaller Res Adjustments - 979px */
+
+    /* Nav Bar Menu */
+
+    @media (max-width: 979px) {
+    
+        .navbar .navbar-inner .btn-navbar {
+            margin: 18px 18px;
+        }
+        
+        .navbar .btn-navbar {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            padding: 7px 10px 3px;
+            transition-duration: 0.4s;
+        }
+        
+        .navbar .btn-navbar:hover {
+            background: transparent;
+            filter: brightness(1.2);
+        }
+        
+        .navbar .navbar-inner .btn-navbar .icon-bar {
+            background-color: rgb(180, 180, 180);
+            border-radius: 0;
+            margin-top: 4px;
+            height: 1.5px;
+        }
+        
+        .navbar .navbar-inner .btn-navbar .icon-bar:last-child {
+            display: none;
+        }   
+        
+        /* Nav Bar Content */
+    
+        .navbar-inner .nav-collapse {
+            margin: 0;
+            border-radius: 0;
+            background: inherit;
+    
+            border: 0;
+        }
+        
+        .navbar .nav-collapse.in {
+            border: 0;
+        }
+        
+        #essentialmenus {
+            padding-left: 20px;
+        }
+        
+        #page-course-view-topics #essentialmenus {
+            padding-left: 0;
+        }
+        
+        #custom_menu_activitystream .dropdown-menu {
+            margin-left: -65px;
+        }
+        
+        #custom_menu_activitystream .dropdown-menu:after {
+            left: 160px;
+        }
+        
+        #essentialmenus li>a {
+            padding: 10px 10px;
+            font-weight: normal;
+        }
+        
+        .navbar .navbar-inner .nav-collapse .nav li.dropdown .dropdown-menu {
+            background-color: rgb(15, 15, 15);
+        }
+        
+        .navbar .navbar-inner .nav-collapse .nav>li.dropdown .dropdown-menu li>a {
+            color: rgb(220, 220, 220);
+        }
+        
+        #essentialmenus .dropdown-toggle, #essentialmenus .custom_menu {
+            font-size: 13px;
+        }
+        
+        .nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a {
+            border-radius: 0;
+        }
+        
+        .navbar .navbar-inner .nav-collapse .nav>li.dropdown .dropdown-menu li>a:hover, .navbar .navbar-inner .nav-collapse .nav>li.dropdown .dropdown-menu li>a.open {
+            background:rgb(30, 30, 30);
+        }
+}
+}
+
+@-moz-document url("https://times.taylors.edu.my/") {
+/* Smaller Res Adjustments Login - 979px */
+
+    @media (max-width: 979px) {
+    
+        #page.container-fluid {
+            padding: 0 80px;
+        }
+    }
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/my/") {
+/* Smaller Res Adjustments DashBoard - 979px */
+
+    @media (max-width: 979px) {
+
+        #page {
+            padding: 0 80px;
+        }
+
+        .block.span12 {
+            display: none;
+        }
+        
+        #main-and-pre:before {
+            margin-top: 20px;
+        }
+        
+        .row-fluid .span8 {
+            width: 100%;
+            margin-left: 0 !important;
+            padding: 0;
+        }
+        
+        .pagination, #page #page-content div[role="main"] {
+            margin-bottom: 0;
+        }
+        
+        .row-fluid .span4 {
+            width: 200px;
+            margin: 0 auto 40px;
+        }
+        
+        .block .header .title>.fa {
+            display: none;
+        }
+        
+        [class*="span"].pull-right, .row-fluid [class*="span"].pull-right {
+            float: none;
+        }
+        
+        .block .list {
+            width: 100%;
+            padding: 0;
+        }
+        
+        .block_badges {
+            margin: 0 0 40px 0;
+        }
+        
+        .block_calendar_month {
+            float: none;
+            display: block;
+            width: auto;
+            height: auto;
+            margin: 0 0 40px 0;
+        }
+        
+        .block_calendar_month .content {
+            display: block;
+            height: auto;
+        }
+        
+        .block .minicalendar {
+            width: auto;
+        }
+        
+        .block_calendar_upcoming {
+            height: auto;
+        }
+        
+        .block_calendar_upcoming {
+            width: auto;
+            margin: 0 0 40px 0;
+        }
+        
+        .block_online_users {
+            margin: 0 0 40px 0;
+        }
+       
+}
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/message/index.php") {
+/* Smaller Res Messages */
+
+    @media (max-width: 979px) {
+
+        .messaging-area-container .messaging-area {
+            border: 0;
+        }
+        
+        .messaging-area-container .messaging-area .contacts-area .searchtextarea,
+        .messaging-area-container .messaging-area .contacts-area .searchtextarea:hover {
+            border-radius: 50px;
+        }
+
+        .messaging-area-container .messaging-area .contacts-area .contacts {
+            margin: 20px 0 0 0;
+            border: solid 2px rgb(30, 30, 30)
+        }
+
+        .messaging-area-container .messaging-area .contacts-area .contacts {
+            height: 475px;
+        }
+        
+        .messaging-area-container .messaging-area.hide-messages .contacts-area .contact.selected:hover {
+            border: 0;
+            background-color: #660b01;
+        }
+
+        .messaging-area-container .messaging-area .contacts-area .tabs {
+            border-top: none;
+        }
+
+        .messaging-area-container .messaging-area .contacts-area .tabs .tab {
+            background-color: rgb(30, 30, 30)
+        }
+
+        .btn, .btn:hover {
+            background: transparent;
+        }
+
+        .messaging-area-container .messaging-area .messages-area .messages-header {
+            border-bottom-color: rgb(30, 30, 30) 
+        }
+
+       .messaging-area-container .btn.btn-link {
+            color: rgb(200, 200, 200);
+        }
+
+        .messaging-area-container .btn.btn-link:hover {
+            text-decoration: none;
+            color: rgb(220, 220, 220);
+        }
+
+        .name .btn.btn-link {
+            font-weight: 600;
+        }
+
+    }
+}
+
+@-moz-document url("https://times.taylors.edu.my/"), url("https://times.taylors.edu.my/login/index.php"), url-prefix("https://times.taylors.edu.my/my/"), url-prefix("https://times.taylors.edu.my/course/"), url-prefix("https://times.taylors.edu.my/calendar/"), url-prefix("https://times.taylors.edu.my/mod/"), url-prefix("https://times.taylors.edu.my/grade/"), url-prefix("https://times.taylors.edu.my/message/") {
+/* Mobile Version NavBar */
+
+@media (max-width: 500px) {
+    
+    .navbar, .navbar-inner {
+        background: rgb(64, 0, 0, 0.7);
+    }
+    
+    .nav-collapse.in {
+        height: 100vh !important;
+        max-height: none;
+    }
+    
+    .navbar .navbar-inner .custommenus,
+    #yui_3_17_2_1_1555752135083_44,
+    .container-fluid.navbar-inner,
+    .navbar {
+        margin: 0;
+    }
+    
+    .navbar-inner .nav-collapse .nav>li {
+        float: none;
+        width: calc(100% - 40px);
+    }
+
+    #page-header.logo {
+        min-height: auto;
+    }
+    
+    .collapse {
+        transition-duration: 1s;
+    }
+    
+    #essentialmenus {
+    padding-left: 20px !important;
+    }
+    
+    .navbar .navbar-inner .usermenu > .nav > .dropdown > a.dropdown-toggle {
+        font-size: 0;
+    }
+    
+    em {
+        font-size: 12px;
+    }
+    
+    /* Profile Toggle */
+    
+    .navbar .navbar-inner .usermenu .dropdown .dropdown-menu li > a,
+    .navbar .navbar-inner .usermenu .dropdown .dropdown-submenu.preferences a.dropdown-toggle,
+    .navbar .navbar-inner .usermenu .nav .dropdown .dropdown-menu ul > li {
+        height: 30px;
+        line-height: 30px;
+    }    
+    
+    .navbar .nav>li>.dropdown-menu.pull-right .dropdown-menu {
+        visibility: hidden;
+        right: 0;
+        top: 35px;
+    }
+    
+    .navbar .nav>li>.dropdown-menu.pull-right .open .dropdown-menu {
+        right: 0;
+        top: 35px;
+        background: rgb(50, 50, 50);
+        visibility: visible;
+    }
+    
+    /* Dropdown Toggle */
+    
+    .navbar .navbar-inner .nav-collapse .nav li.dropdown .dropdown-menu {
+        background: rgb(0, 0, 0, 0.75);
+    }
+    
+    .custom_menu .open .dropdown-menu  {
+        width: 100%;
+    }
+    
+    /* Message Toggle */
+    
+    .navbar .popover-region .popover-region-container {
+        top: 68px;
+        height: calc(100vh - 80px);
+    }
+    
+    .popover-region-toggle::before {
+        display: none;
+    }
+    
+    .popover-region-container {
+        border: 0;
+    }
+    
+    .popover-region-header-container {
+        padding: 0 20px;
+    }
+    
+    .content-item-container {
+        padding: 10px 20px;
+    }
+    
+/* Universal Footer */
+    
+    footer {
+        top: 0 !important;
+    }
+    
+    body:not(.tabletdevice).empty-region-side-post.used-region-side-pre 
+    #main-and-pre #block-region-side-pre {
+        display: none;
+    }
+    
+    .footerperformance {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    
+}
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/login/index.php") {
+/* Mobile Version Login */
+
+@media (max-width: 500px) {
+    
+    #page-login-index .loginbox .loginform .form-input input {
+        width: calc(100% - 10px);
+    }
+    
+}
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/my/") {
+/* Mobile Dashboard */
+
+@media (max-width: 500px) { 
+    
+    #page.container-fluid {
+        margin-top: 40px;
+    }
+    
+    .breadcrumb-nav ul.breadcrumb.style1 {
+        height: 40px;
+    }
+    
+    .breadcrumb-nav ul.breadcrumb.style1 li a {
+        font-size: 24px;
+    }
+    
+    .breadcrumb-button .singlebutton input[type="submit"] {
+        font-size: 12px;
+    }
+    
+    #main-and-pre:before {
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .courseitemsearch p {
+        margin-bottom: 10px;
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .courseitemsearch #courseitemsearchresults {
+        width: 100%;
+        display: block;
+    }
+    
+    #courseitemsearch {
+        height: 28px;
+        width: calc(100% - 10px);
+    }
+    
+    #courseitemsearchresults input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+    }
+    
+    #courseitemsearchresults input[type="checkbox"]:checked:after {
+        width: 3px;
+        height: 8px;
+        left: 4px;
+    }
+    
+    #courseitemsearchresults label {
+        font-size: 11px;
+    }
+    
+    .nav-tabs>li>a {
+        width: calc(50% - 26px);
+        float: left;
+    }
+    
+    .btn-group>.btn, .btn-group>.dropdown-menu, .btn-group>.popover {
+        font-size: 11px;
+    }
+    
+    .block_myoverview .empty-placeholder-image-lg {
+        height: 40px;
+    }
+    
+    /* Navigation */
+    
+    .block .header .title h2, .block h3.main {
+        font-size: 14px;
+    }
+    
+    /* Calendar */
+    
+    .block .calendar-controls .current a {
+        font-size: 14px;
+    }
+    
+    .block .minicalendar tbody>tr, .block .minicalendar tbody>tr>td {
+        height: 30px;
+    }
+    
+    .minicalendar th, .block .minicalendar td {
+        font-size: 11px;
+    }
+    
+    .day.text-center.today a {
+        line-height: 30px;
+    }
+    
+    /* Listentry */
+    
+    .block_online_users .content .info {
+        margin-bottom: 20px;
+    }
+    
+    .listentry {
+        height: 20px;
+        line-height: 20px;
+    }
+    
+    .listentry a {
+        font-size: 11px;
+    }
+    
+    .block_online_users ul.list::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    
+}
+
+}
+
+@-moz-document url-prefix("https://times.taylors.edu.my/course/") {
+/* Mobile Courses */
+
+@media (max-width: 500px) { 
+    
+    #page.container-fluid {
+        margin-top: 40px;
+    }
+    
+    body .course-content ul.topics li.section {
+        background-color: transparent;
+    }
+    
+    .breadcrumb-nav ul.breadcrumb.style1,
+    #page-top-header, #page-navbar, #page-navbar .breadcrumb-nav {
+        display: none;
+    }
+    
+    #page-content h1 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    
+    h3 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    #block-region-side-pre .block,
+    .course-content ul.topics li.section .left {
+        visibility: hidden;
+        height: 10px;
+    }
+
+    
+}
+}
