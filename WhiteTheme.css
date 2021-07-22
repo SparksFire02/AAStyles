@@ -1,7 +1,23 @@
-@-moz-document url("https://ac.xmu.edu.my/"), url-prefix("https://ac.xmu.edu.my/index.php") {
+@-moz-document url-prefix("https://ac.xmu.edu.my/") {
+/* Background */
+
+body {
+    /* Change the link */
+    background-image: url("https://cdn.wallpaperhub.app/cloudcache/4/4/7/5/e/7/4475e73c885921925f61fcf123c7c8c1f93e1c0c.jpg");
+    /* Adjust sizes to scale whole window, in % */
+    background-size: 120%; 
+    
+    /* Dont touch % */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+}
+
+@-moz-document url("ac.xmu.edu.my"), url-prefix("https://ac.xmu.edu.my/index.php") {
 /* Login Screen */
 
-body, html, label, input {
+body, html, label {
     font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
 }
 
@@ -17,8 +33,12 @@ img, #form>br {
 
 #content {
     height: 100%;
-    background: none;
+    width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(100px);
     border: none;
+    border-radius: 5px;
 }
 
 #content h1 {
@@ -58,6 +78,7 @@ img, #form>br {
     width: 500px;
     background: none;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 
@@ -72,7 +93,6 @@ img, #form>br {
     display: block;
     padding-top: 8px;
     padding-left: 10px;
-    background-color: rgb(245, 245, 245);
     color: #20709F;
     text-transform: uppercase;
     font-size: 10px;
@@ -88,9 +108,10 @@ img, #form>br {
     padding-left: 10px;
     padding-bottom: 8px;
     padding-right: 0;
-    background-color: rgb(245, 245, 245);
+    background: inherit;
     color: #134360;
     font-size: 18px;
+    border-bottom: solid 2px #134360;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     outline: none;
@@ -103,7 +124,7 @@ img, #form>br {
     padding-left: 10px;
     padding-bottom: 8px;
     padding-right: 0;
-    background-color: rgb(245, 245, 245);
+    background: inherit;
     color: #134360;
     font-size: 18px;
     border-bottom-left-radius: 5px;
@@ -117,41 +138,21 @@ img, #form>br {
 
 #form input[type="submit"] {
     border: none;
-    width: calc(100% + 10px);
+    width: auto;
+    height: auto;
     border-radius: 5px;
-    height: 60px;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 18px;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 14px;
     color: #fff;
     font-weight: 500;
-    background: linear-gradient(to right, #134360, #061620);
-    transition-duration: 0.4s;
+    background: #134360;
+    cursor: pointer;
 }
 
 #form input[type="submit"]:hover, select {
     cursor: pointer;
 } 
-
-#form input[type="submit"]:hover {
-    filter: brightness(1.2);
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-    
-  border: 1px solid rgb(245, 245, 245);
-  -webkit-text-fill-color: #134360;
-  -webkit-box-shadow: 0 0 0px 1000px rgb(245, 245, 245) inset;
-  transition: background-color 5000s ease-in-out 0s;
-}
 }
 
 @-moz-document url-prefix("https://ac.xmu.edu.my/student/") {
@@ -162,7 +163,7 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
 }
 
 #header {
-    position: static;
+    position: relative;
 }
 
 #header #logo {
@@ -174,7 +175,6 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
     position: static;
     display: inline-block;
     padding-top: 40px;
-    padding-bottom: 10px;
     height: auto;
     background: none;
 }
@@ -192,53 +192,50 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
 #header #menuinf #menu {
     height: auto;
     display: block;
-    padding-top: 40px;
+    padding-top: 70px;
     padding-left: 0;
 }
 
 #nav {
     display: inline-block;
+    width: 100vw;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(100px);
 }
 
 #nav>li {
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    min-width: 222.6px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: solid 5px rgb(240, 240, 240);
-    background: #fff;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    transition-duration: 0.4s;
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
 #nav>li:hover {
-    border-color: #20709F;
-    background: #fff;
+    background: none;
 }
 
 #nav>li>a {
     color: #002A43;
-    font-weight: 700;
+    font-weight: normal;
     font-size: 16px;
 }
 
 #nav li ul {
     border-width: 0;
-}
-
-#nav li>ul {
-    background: #fff;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    z-index: 99;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-left: 1px solid rgb(220, 220, 220);
+    border-right: 1px solid rgb(220, 220, 220);
+    border-bottom: 1px solid rgb(220, 220, 220);
 }
 
 #nav li li {
-    padding-left: 2px;
+    padding: 5px 0;
+    width: auto;
     font-size: 14px;
 }
 
@@ -258,7 +255,7 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
     color: #000;
     position: absolute;
     top: 30px;
-    right: 110px;
+    right: 0;
     width: auto;
     border: solid 1px transparent;
     padding-top: 10px;
@@ -272,83 +269,39 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
     z-index: 0;
 }
 
-#header #menuinf #inf::before {
-    content: "WELCOME,,";
-    border-bottom: solid 2px #fff;
-    position: absolute;
-    background: #fff;
-    color: rgb(255, 255, 255);
-}
-
-/* User Customisation */
-
-    #header #menuinf #inf::after {
-        content: "Tomoe Gozen";
-        position: absolute;
-        left: 0;
-        top: 11px;
-        background: #fff;
-        width: 90%;
-    }
-
 #nav li:nth-child(5) {
     position: absolute;
     right: 20px;
-    top: 30px;
-    height: auto;
     min-width: 0;
     width: auto;
-    padding: 0;
     border: none;
-    border-radius: 5px;
     box-shadow: none;
-    text-transform: uppercase;
     transition: 0.4s;
-}
-
-#nav li:nth-child(5):hover {
-    background: #105984;
 }
 
 #nav li:nth-child(5) a {
     color: #105984;
     font-size: 16px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-right: 20px;
-    padding-left: 20px;
+    font-weight: bold;
 }
 
-#nav li:nth-child(5) a:hover {
-    color: #fff;
-}
 
 /* Main */
 
-#m_ext::before {
-    width: 100%;
-    height: 100px;
-    content: '';
-    background: #005385;
-    position: absolute;
-    top: -55px;
-    z-index: -1;
-}
-
 #m_ext {
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 50px;
-    background: #005385;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
     width: 100%;
-    position: relative;
 }
 
 #main {
     border: none;
+    min-height: auto;
 }
 
 #main2 {
-    background: rgb(255, 255, 255);
     margin: 0 auto;
     max-width: 1000px;
     border-radius: 5px;
@@ -356,7 +309,6 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
     padding-right: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
-    box-shadow: 0 3px 2px 0 rgba(255, 255, 255, 0.15), 0 6px 5px 0 rgba(255, 255, 255, 0.1);
 }
 
 #main2 h3 {
@@ -364,6 +316,10 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
     font-size: 16px;
     color: #0D2D40;
     text-transform: uppercase;
+}
+
+table {
+    max-width: 600px;
 }
 
 table.form th {
@@ -388,7 +344,7 @@ table.form tr>td:nth-child(3) {
 }
 }
 
-@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a="), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Default&a=Kb"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index") {
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Kb"), url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url("https://ac.xmu.edu.my/student/index.php?c=Xk&a=index"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj") {
 /* Timetable Adjustment */
 
 #main2 {
@@ -406,11 +362,6 @@ table.form tr>td:nth-child(3) {
     width: 100%;
     margin-bottom: 0;
     text-align: center;
-    position: relative;
-}
-
-#page-nav table tr {
-    height: 40px;
 }
 
 #page-nav table td {
@@ -437,15 +388,13 @@ table.form tr>td:nth-child(3) {
     background: #F7F9F9;
     padding: 5px 15px;
     position: absolute;
-    right: 5px;
-    top: 10px;
-    outline: none;
+    right: 30px;
+    top: 165px;
     cursor: pointer;
-    transition-duration: 0.4s;
 }
 
 #page-nav table td input[type="button"]:hover {
-    background: #f3f5f5;
+    background: #F4F6F7;
 }
 
 #page-nav span {
@@ -504,212 +453,6 @@ table.solid td.row_kb {
     background: #faa7dc;
     border-color: #faa7dc;
     font-weight: 600;
-}
-}
-
-@-moz-document url-prefix("https://ac.xmu.edu.my/student/index.php?c=Pj&a=add"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index&pj_id") {
-/* Student Evaluation Tweaks */
-
-    /* unhide third column */
-    table.form tr>td:nth-child(3) {
-        display: block;
-    }
-
-#page-nav {    
-    padding: 10px 0;
-}
-
-#page-nav table td {
-    border-bottom: 0;
-}
-
-.even, .odd {
-    background: #e2f4ff;
-}
-
-.even {
-    border-top: solid 1px #d5e7f2;
-}
-
-table.form .even:nth-child(1) {
-    background: #EAEEF0;
-    border-top: 0;
-}
-
-table.form .even:nth-child(1) td, table.form .odd th, table.form .even td {
-    padding: 10px 20px;
-}
-
-table.form .odd td {
-    padding-bottom: 10px;
-}
-
-table.form td {
-    color: rgb(0, 0, 0);
-}
-
-table.form .odd:nth-child(2) th,
-table.form .even:nth-child(1) td {
-    color: rgb(59, 59, 59);
-}
-
-table.form textarea {
-    background: rgb(238, 238, 238);
-    width: 100%;
-    resize: none;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
-    font-size: 14px;
-    padding: 10px 20px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-table.form tfoot tr:first-child th {
-    padding-top: 50px;
-}
-
-table.form tfoot tr:last-child td {
-    padding-top: 20px;
-    position: relative;
-}
-
-table td input[type="submit"] {
-    font-size: 16px;
-    appearance: none;
-    border: solid 2px #316c90;
-    background: #316c90;
-    color: #fff;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.4s;
-    
-    position: absolute;
-    left: 2px;
-}
-
-table td input[type="button"] {
-    font-size: 16px;
-    appearance: none;
-    border: solid 2px #316c90;
-    background: transparent;
-    color: #316c90;
-    padding: 10px 20px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.4s;
-    
-    position: absolute;
-    left: 120px;
-}
-
-/* radio buttons and labels */
-
-table td input[type="radio"] {
-    background: transparent;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border: solid 1px rgb(0, 0, 0);
-    border-radius: 50px;
-    outline: none;
-    margin: 0;
-}
-
-table td input[type="radio"]:hover {
-    cursor: pointer;
-}
-
-table td input[type="radio"]:checked {
-    background: transparent !important;
-    position: relative;
-}
-
-table td input[type="radio"]:checked:after {
-    content: '';
-    width: 9px;
-    height: 9px;
-    display: block;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    background: rgb(0, 0, 0);
-    border-radius: 50px;
-    transition: 0.4s;
-}
-
-table td label {
-    display: grid;
-    place-items: center;
-}
-
-}
-
-@-moz-document url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a") {
-/* Online Registration Button Tweaks */
-
-#page-nav table td {
-    text-align: center;
-}
-
-#page-nav table td input[type="button"] {
-    position: static;
-}
-
-#page-nav table td input[type="text"] {
-    width: 300px;
-    padding: 5px 10px;
-    font-size: 16px;
-    background: #fafafb;
-    border: none;
-}
-
-#page-nav .p_bar {
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#page-nav .p_bar a.p_total {
-    display: none;    
-}
-
-#page-nav .p_bar a:nth-child(2), #page-nav .p_bar a:nth-child(4) {
-    font-size: 0 !important;
-    border: none;
-}
-
-#page-nav .p_bar a:nth-child(2)::before {
-    content: "←";
-    font-size: 20px;
-}
-
-#page-nav .p_bar a:nth-child(4)::after {
-    content: "→";
-    font-size: 20px;
-}
-
-#page-nav .p_bar a.p_curpage {
-    border: none;
-    background: #b1c8d3;
-    border-radius: 50px;
-    padding: 5px 10px;
-    margin-top: 5px;
-    font-family: "Google Sans", sans-serif;
-    font-weight: 1000;
-}
-}
-
-@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Xk&a=index") {
-/* Additional Tweaks for Custom URL */
-
-table.data th:nth-child(1) {
-    width: 500px;
 }
 }
 
