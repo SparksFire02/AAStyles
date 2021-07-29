@@ -14,7 +14,7 @@ body {
 }
 }
 
-@-moz-document url("ac.xmu.edu.my"), url-prefix("https://ac.xmu.edu.my/index.php") {
+@-moz-document url("https://ac.xmu.edu.my/"), url-prefix("https://ac.xmu.edu.my/index.php") {
 /* Login Screen */
 
 body, html, label {
@@ -537,4 +537,62 @@ table.data td {
     }
 
 }
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/") {
+/* Timeout */
+
+div.dialog {
+    border: none;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(100px);
+    border-radius: 5px;
+    padding: 4em 4em;
+}
+
+div.dialog h1, div.dialog p:nth-child(2) {
+    font-size: 0;
+    padding: 10px 0;
+}
+
+div.dialog h1::before {
+    content: "Access denied.";
+    display: block;
+    position: relative;
+    font-size: 17px;
+}
+
+div.dialog p:nth-child(2)::before {
+    content: "Your session has timed out. Please log in again.";
+    display: block;
+    font-size: 17px;
+}
+
+div.dialog p:nth-child(3) {
+    margin-bottom: 0;
+}
+
+div.dialog p:nth-child(3) a {
+    font-size: 0;
+}
+
+div.dialog p:nth-child(3) a:nth-child(1)::before {
+    content: "Login";
+    display: inline-block;
+    font-size: 17px;
+    padding: 0.3em 2em;
+    color: #fff;
+    background: #0395ea;
+    border-radius: 5px;
+}
+
+div.dialog p:nth-child(3) a:nth-child(2)::before {
+    content: "Return";
+    display: inline-block;
+    font-size: 17px;
+    padding: 0.3em 2em;
+    color: #0395ea;
+}
+
+
 }
