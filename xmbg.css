@@ -1,5 +1,5 @@
-/* Background */
-
+@-moz-document url-prefix("https://ac.xmu.edu.my/") {
+    /* Background */
 body {
     /* Change the link */
     background-image: url("https://sparksfire02.github.io/AAStyles/Archer.jpg");
@@ -10,4 +10,5 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
 }
