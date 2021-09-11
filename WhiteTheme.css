@@ -152,13 +152,13 @@ img, #form>br {
 
 #form input[type="submit"]:hover, select {
     cursor: pointer;
-} 
+}
 }
 
 @-moz-document url-prefix("https://ac.xmu.edu.my/student/") {
 /* Information */
 
-body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
+body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr, select {
     font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
 }
 
@@ -192,7 +192,7 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
 #header #menuinf #menu {
     height: auto;
     display: block;
-    padding-top: 70px;
+    padding-top: 30px;
     padding-left: 0;
 }
 
@@ -289,8 +289,7 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
 /* Main */
 
 #m_ext {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 0;
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     width: 100%;
@@ -303,11 +302,11 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
 
 #main2 {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 80%;
     border-radius: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 60px;
 }
 
@@ -319,11 +318,15 @@ body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
 }
 
 table {
-    max-width: 600px;
+    max-width: 100%;
+}
+
+table.form {
+    border: none;
 }
 
 table.form th {
-    border: none;
+    border: none !important;
     background: none;
     text-align: left;
     color: #899ba5;
@@ -344,13 +347,8 @@ table.form tr>td:nth-child(3) {
 }
 }
 
-@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Kb"), url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url("https://ac.xmu.edu.my/student/index.php?c=Xk&a=index"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj") {
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Kb"), url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj") {
 /* Timetable Adjustment */
-
-#main2 {
-    max-width: none;
-    width: calc(100% - 40px);
-}
 
 #page-nav {
     background: #EAEEF0;
@@ -388,9 +386,10 @@ table.form tr>td:nth-child(3) {
     background: #F7F9F9;
     padding: 5px 15px;
     position: absolute;
-    right: 30px;
-    top: 165px;
+    right: 10px;
+    top: 10px;
     cursor: pointer;
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
 }
 
 #page-nav table td input[type="button"]:hover {
@@ -399,6 +398,10 @@ table.form tr>td:nth-child(3) {
 
 #page-nav span {
     display: none;
+}
+
+table tbody {
+    position: relative;
 }
 
 table.solid, table {
@@ -452,18 +455,89 @@ table.solid td.even, table.data td:nth-child(1) {
 table.solid td.row_kb {
     background: #faa7dc;
     border-color: #faa7dc;
-    font-weight: 600;
+}
+
+table.solid tr:first-child th:first-child, table.solid td:first-child {
+    border: none;
+}
+
+.row_over {
+    background: rgb(255, 255, 255);
+}
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a=view&id=175") {
+/* Multiple Buttons Table */
+
+#page-nav table tr:first-child td {
+    padding-top: 20px;
+}
+
+#page-nav table tr:nth-child(2) td {
+    padding-top: 5px;
+}
+
+#page-nav table td input[type="text"] {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    appearance: none;
+    background: #F7F9F9;
+    border: solid 1px rgb(220, 220, 220);
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+
+#page-nav table td input[type="button"] {
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    background: #F7F9F9;
+    position: static;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#page-nav table td input[type="button"]:nth-child(4),
+#page-nav table td input[type="button"]:nth-child(5),
+#page-nav table td input[type="button"]:nth-child(6),
+#page-nav table td input[type="button"]:nth-child(7) {
+    display: none;
+}
+
+#page-nav .p_bar {
+    margin: 0 auto;
+}
+
+.p_total {
+    display: none;
+}
+
+#page-nav .p_bar a {
+    float: none;
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+
+#page-nav .p_bar a.p_disabled,
+#page-nav .p_bar a.p_curpage {
+    padding: 0 8px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+#page-nav .p_bar a.p_curpage {
+    border-radius: 50px;
+    margin: 0 10px;
 }
 }
 
 @-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index") {
-/* Tweaks to Data Table (Course List, Exam) */
+ /* Tweaks to Data Table (Course List, Exam) */
 
 table.data td {
     text-align: center !important;
     background: #fff;
     border-color: #EAEEF0;
-    font-weight: 600;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -593,6 +667,4 @@ div.dialog p:nth-child(3) a:nth-child(2)::before {
     padding: 0.3em 2em;
     color: #0395ea;
 }
-
-
 }
