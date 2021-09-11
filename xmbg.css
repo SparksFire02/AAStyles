@@ -1,0 +1,13 @@
+/* Background */
+
+body {
+    /* Change the link */
+    background-image: url("https://sparksfire02.github.io/AAStyles/Archer.jpg");
+    /* Adjust sizes to scale whole window, in % */
+    background-size: 100%; 
+    
+    /* Dont touch % */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
