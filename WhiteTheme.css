@@ -450,7 +450,7 @@ table.solid tr:first-child th:first-child, table.solid td:first-child {
 }
 }
 
-@-moz-document url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a=view&id=175") {
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a=view&id=") {
 /* Multiple Buttons Table */
 
 #page-nav table tr:first-child td {
