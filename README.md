@@ -7,12 +7,12 @@ There are two different themes: white and dark. To apply the theme, use a browse
 2. Open the extension (top right, click xStyles, press settings button)
 3. Write New Style
 4. At the right, name it whatever you want
-5. At update URL, put this: https://sparksfire02.github.io/AAStyles/<name>.css
+5. At update URL, put this: https://sparksfire02.github.io/AAStyles/(name).css
 
 Note: xStyle allows one-click update and also automatic updates:
 1. Open the extension (top right, click xStyles, press settings button)
 2. Click the update button
-<If automatic update button is blurred, the feature is turned off>
+(If automatic update button is blurred, the feature is turned off)
 
 ## Stylus
 1. Open the file / Download the file of what you prefer
