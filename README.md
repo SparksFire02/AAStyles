@@ -1,15 +1,15 @@
 # XMUM Academics CSS Design
 
-There are two different themes: white and dark. To apply the theme, use a browser extension (xStyles, Stylus).
+There are two different themes: white and dark. To apply the theme, use a browser extension (xStyle, Stylus).
 
 ## xStyles
-1. Download xStyles extension (Chrome Web Store)
+1. Download xStyle extension (Chrome Web Store)
 2. Open the extension (top right, click xStyles, press settings button)
 3. Write New Style
 4. At the right, name it whatever you want
 5. At update URL, put this: https://sparksfire02.github.io/AAStyles/<name>.css
 
-Note: xStyles allows one-click update and also automatic updates:
+Note: xStyle allows one-click update and also automatic updates:
 1. Open the extension (top right, click xStyles, press settings button)
 2. Click the update button
 <If automatic update button is blurred, the feature is turned off>
