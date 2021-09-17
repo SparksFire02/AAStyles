@@ -1,0 +1,746 @@
+@-moz-document url-prefix("https://ac.xmu.edu.my/") {
+/* Background */
+
+body {
+    /* Change the link */
+    background-image: url("https://cdn.wallpaperhub.app/cloudcache/9/1/5/4/b/5/9154b59c02887a5eb398be3dce7531b52295c9e9.jpg");
+    /* Adjust sizes to scale whole window, in % */
+    background-size: 120%; 
+    
+    /* Dont touch % */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+}
+
+@-moz-document url("https://ac.xmu.edu.my/"), url-prefix("https://ac.xmu.edu.my/index.php") {
+/* Login Screen */
+
+body, html, label {
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+
+img, #form>br {
+    display: none;
+}
+
+#content, #window {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+
+#content {
+    height: 100%;
+    width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(100px);
+    border: none;
+    border-radius: 5px;
+}
+
+#content h1 {
+    width: 500px;
+    margin: 50px auto 0;
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    color: #f6f6f6;
+}
+
+#content h1::after {
+    content: "Sign in to continue";
+    display: block;
+    color: rgb(198, 198, 198);
+    font-size: 16px;
+}
+
+#note {
+    font-size: 0;
+    float: none;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error-msg {
+    font-size: 12px;
+    color: #f19d9d;
+}
+
+#form {
+    float: none;
+    width: 500px;
+    background: none;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+#form form {
+    border: 0;
+    padding: 0;
+}
+
+#form label {
+    width: 100%;
+    display: block;
+    padding-top: 8px;
+    padding-left: 10px;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#form input {   
+    width: 100%;
+    border: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-right: 0;
+    background: inherit;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: solid 2px #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
+#form select {
+    width: calc(100% + 10px);
+    border: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-right: 0;
+    background: inherit;
+    color: #fff;
+    font-size: 18px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
+#form label:nth-child(13) {
+    display: none;
+}
+
+#form input[type="submit"] {
+    border: none;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    background: #008ce1;
+    cursor: pointer;
+}
+
+#form input[type="submit"]:hover, select {
+    cursor: pointer;
+}
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/") {
+/* Information */
+
+body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr, select {
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+
+#header {
+    position: relative;
+}
+
+#header #logo {
+    display: none;
+}
+
+#header #menuinf {
+    margin: 0;
+    position: static;
+    display: inline-block;
+    padding-top: 40px;
+    height: auto;
+    background: none;
+    width: 100%;
+}
+
+#header #menuinf::before {
+    content: "XMUM Academic Affairs Online System";
+    font-size: 24px;
+    padding-left: 20px;
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+/* Revamped NavBar */
+
+#header #menuinf #menu {
+    height: auto;
+    display: block;
+    padding-top: 30px;
+    padding-left: 0;
+}
+
+#nav {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(30px);
+}
+
+#nav>li {
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+#nav>li:hover {
+    background: none;
+}
+
+#nav>li>a {
+    color: #51c0ff;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#nav li ul {
+    border-width: 0;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    background: rgba(30, 30, 30, 1);
+    border-left: 1px solid rgb(30, 30, 30);
+    border-right: 1px solid rgb(30, 30, 30);
+    border-bottom: 1px solid rgb(30, 30, 30);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#nav li li {
+    padding: 5px 0;
+    width: auto;
+    font-size: 14px;
+}
+
+#nav>li>ul>li:hover {
+    background: transparent;
+}
+
+#nav li li a {
+    color: #ececec;
+}
+
+#nav li li a:hover {
+    color: #fff;
+}
+
+#header #menuinf #inf {
+    color: #e1e1e1;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: auto;
+    border: solid 1px transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: right;
+    z-index: 0;
+}
+
+#nav li:nth-child(5) {
+    position: absolute;
+    right: 20px;
+    min-width: 0;
+    width: auto;
+    border: none;
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+#nav li:nth-child(5) a {
+    color: #e8e8e8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Main */
+
+#m_ext {
+    padding-top: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 100%;
+}
+
+#main {
+    border: none;
+    min-height: auto;
+}
+
+#main2 {
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#main2 h3 {
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #e2e2e2;
+    text-transform: uppercase;
+}
+
+table {
+    max-width: 100%;
+}
+
+table.form th {
+    border: none;
+    background: none;
+    text-align: left;
+    color: #899ba5;
+    text-transform: uppercase;
+}
+
+table.form td {
+    border: none;
+    color: rgb(230, 230, 230);
+}
+
+table.form tr>td:nth-child(3) {
+    display: none;
+}
+
+select option {
+    background: #3a3b3b;
+}
+
+table.form,
+table.form th:first-child, 
+table.form td:first-child {
+    border: none;
+}
+
+/* Footer */
+#footer {
+    border: none;
+}
+}
+
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Kb"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj") {
+/* Timetable Adjustment */
+
+#page-nav {
+    background: #3a3b3b;
+    padding-bottom: 10px;
+}
+
+#page-nav table {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#page-nav table td {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    color: rgb(240, 240, 240);
+}
+
+#page-nav table td select {
+    font-size: 16px;
+    background-color: transparent;
+    color: rgb(240, 240, 240);
+    border: none;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+
+#page-nav table td input[type="button"] {
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    background: #434343;
+    color: #fff;
+    padding: 5px 15px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+
+#page-nav table td input[type="button"]:hover {
+    background: #585858;
+}
+
+#page-nav span {
+    display: none;
+}
+
+table tbody {
+    position: relative;
+}
+
+table.solid, table {
+    border: none;
+    max-width: none;
+    table-layout: fixed;
+}
+
+table.solid th, table.data th {
+    background: #3a3b3b;
+    border-top: none; 
+    border-color: #464747;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    width: calc(100% / 5);
+    font-size: 12px;
+}
+
+table.solid th:nth-child(1), table.data th:nth-child(1) {
+    width: 130px;
+}
+
+/* table.solid th:nth-child(7),*/ table.solid th:nth-child(8) {
+    display: none;
+}
+
+table.solid td.even, table.solid td.row_kb {
+    display: table-cell;
+}
+
+table.solid td, table.data td {
+    border-color: rgb(70, 70, 70);
+    background: rgba(70, 70, 70, 0.3);
+}
+
+table.solid td.even, table.data td:nth-child(1) {
+    width: 130px;
+    font-weight: 600;
+    background: #00578c;
+    border-color: #00578c;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+table.solid td.row_kb {
+    background: #b23183;
+    border-color: #ac1877;
+    color: rgb(230, 230, 230);
+    font-weight: normal;
+}
+
+table.solid tr:first-child th:first-child, table.solid td:first-child {
+    border: none;
+}
+
+.row_over {
+    background: rgb(0, 0, 0);
+}
+
+/* specific to dark theme */
+
+table.data tr:first-child th:first-child {
+    border: none;
+}
+
+table.data {
+    border: none;
+}
+
+.even {
+    background: none;
+}
+
+table.data td {
+    color: rgb(230, 230, 230);
+}
+
+#main2 a {
+    color: rgb(255, 255, 255);
+}
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a") {
+/* Multiple Buttons Table */
+
+#page-nav table tr:first-child td {
+    padding-top: 20px;
+}
+
+#page-nav table tr:nth-child(2) td {
+    padding-top: 5px;
+}
+
+#page-nav table td input[type="text"] {
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    appearance: none;
+    background: rgb(50, 50, 50);
+    border: solid 1px rgb(70, 70, 70);
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+
+#page-nav table td input[type="button"] {
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    background: #434343;
+    position: static;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#page-nav table td input[type="button"]:nth-child(4),
+#page-nav table td input[type="button"]:nth-child(5),
+#page-nav table td input[type="button"]:nth-child(6),
+#page-nav table td input[type="button"]:nth-child(7) {
+    display: none;
+}
+
+#page-nav .p_bar {
+    margin: 0 auto;
+}
+
+.p_total {
+    display: none;
+}
+
+#page-nav .p_bar a {
+    float: none;
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+
+#page-nav .p_bar a.p_disabled,
+#page-nav .p_bar a.p_curpage {
+    padding: 0 8px;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+#page-nav .p_bar a.p_curpage {
+    border-radius: 50px;
+    margin: 0 10px;
+}
+
+#content table td input[type="button"] {
+   font-size: 16px;
+    appearance: none;
+    border: none;
+    background: #434343;
+    position: static;
+    padding: 5px 15px;
+    cursor: pointer; 
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
+}
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/index.php?c=Xk&a=Random") {
+/* Selecting Electives */
+
+#content table td input[type="button"]:hover {
+    background: #434343;
+}
+
+#data_table {
+    margin-top: 3em;
+}
+
+table.data th {
+    width: 100%;
+}
+
+#page-nav span {
+    display: inline;
+}
+
+#page-nav table td input[type="button"] {
+    float: left;
+}
+
+#page-nav table td input[type="button"]:nth-child(2) {
+    margin-left: 20px;
+}
+}
+
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index") {
+/* Tweaks to Data Table (Course List, Exam) */
+
+table.data td {
+    text-align: center !important;
+    background: #444;
+    border-color: #545454;
+    color: rgb(213, 213, 213);
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+}
+
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Xk&a=index") {
+/* Online Registration */
+
+#page-nav span {
+    display: inline;
+    color: #a2cde6 !important;
+}
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/") {
+/* Mobile Adjustment */
+
+@media screen and (max-width: 1000px) {
+    
+    /* Status */
+    #header #menuinf #inf {
+        display: none;
+    }
+    
+    /* NavBar */
+    #nav {
+        margin-bottom: 0;
+    }
+    
+    /* Main */
+    #m_ext {
+        position: static;
+        padding-top: 0;
+        padding-bottom: 50px;
+        background: rgb(30, 30, 30);
+    }
+    
+    #main2 h3::after {
+        content: 'Please view on fullscreen, this website is so horribly built for mobile view.';
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+        color: rgb(158, 158, 158);
+    }
+    
+    #main2 {
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+    
+    /* Timetable */
+    #page-nav table td input[type="button"] {
+        position: static;
+    }
+    
+    table.solid th:nth-child(1) {
+        width: 70px;
+    }
+}
+}
+
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=inf") {
+/* Personal Information Mobile Adjustment */
+
+@media screen and (max-width: 1000px) {
+    #main2 {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+
+}
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/") {
+/* Timeout */
+
+div.dialog {
+    border: none;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(100px);
+    border-radius: 5px;
+    padding: 4em 4em;
+}
+
+div.dialog h1, div.dialog p:nth-child(2) {
+    font-size: 0;
+    padding: 10px 0;
+}
+
+div.dialog h1::before {
+    content: "Access denied.";
+    display: block;
+    position: relative;
+    font-size: 17px;
+}
+
+div.dialog p:nth-child(2)::before {
+    content: "Your session has timed out. Please log in again.";
+    display: block;
+    font-size: 17px;
+}
+
+div.dialog p:nth-child(3) {
+    margin-bottom: 0;
+}
+
+div.dialog p:nth-child(3) a {
+    font-size: 0;
+}
+
+div.dialog p:nth-child(3) a:nth-child(1)::before {
+    content: "Login";
+    display: inline-block;
+    font-size: 17px;
+    padding: 0.3em 2em;
+    color: #fff;
+    background: #0395ea;
+    border-radius: 5px;
+}
+
+div.dialog p:nth-child(3) a:nth-child(2)::before {
+    content: "Return";
+    display: inline-block;
+    font-size: 17px;
+    padding: 0.3em 2em;
+    color: #0395ea;
+}
+}
