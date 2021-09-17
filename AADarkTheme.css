@@ -1,651 +1,552 @@
-@-moz-document domain("l.xmu.edu.my") {
-/* Navbars, Sidepanels and Footers */ 
+@-moz-document url-prefix("https://ac.xmu.edu.my/") {
+/* Background */
 
-/* Navbar */
-
-nav.navbar {
-    background-color: #272c33;
+body {
+    /* Change the link */
+    background-image: url("https://cdn.wallpaperhub.app/cloudcache/9/1/5/4/b/5/9154b59c02887a5eb398be3dce7531b52295c9e9.jpg");
+    /* Adjust sizes to scale whole window, in % */
+    background-size: 120%; 
+    
+    /* Dont touch % */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 }
 
-.btn-secondary, .btn-default {
-    background-color: #272c33;
-    border-color: #272c33;
+@-moz-document url("https://ac.xmu.edu.my/"), url-prefix("https://ac.xmu.edu.my/index.php") {
+/* Login Screen */
+
+body, html, label {
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
 }
 
-.btn-secondary:hover, .btn-default:hover,
-.btn-secondary:not(:disabled):not(.disabled):active {
-    background-color: rgb(70, 70, 70);
-    border-color: rgb(70, 70, 70);
-    color: rgb(255, 255, 255);
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active {
-    color: rgb(255, 255, 255);
-}
-
-@media (min-width: 768px) and (max-width: 1365px) {
-    .custom-menus {
-        display: none !important;
-    }
-}
-
-nav.navbar .drawer-toggle .nav-link,
-nav.navbar ul.navbar-nav .lang-menu .nav-link,
-nav.navbar ul.navbar-nav .popover-region .popover-region-toggle,
-a.dropdown-toggle,
-.navbar-light .navbar-brand,
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: #fff;
-}
-
-nav.navbar ul.navbar-nav li>a, nav.navbar ul.navbar-nav .nav-item>a {
-    color: rgb(220, 220, 220);
-}
-
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: rgb(200, 200, 200);
-}
-
-#page-site-index.notloggedin .btn-login-top {
-    color: rgb(255, 255, 255);
-    border: rgb(255, 255, 255) 1px solid;
-}
-
-
-nav.navbar ul.navbar-nav .lang-menu .nav-link,
-nav.navbar ul.navbar-nav .popover-region .popover-region-toggle {
-    padding: 0;   
-}
-
-nav.navbar .moove-search-input {
-    width: auto;
-}
-
-/* Sidebar */
-#nav-drawer {
-    height: calc(100% - 116px);
-}
-
-#nav-drawer .list-group .list-group-item a:hover,
-#nav-drawer.closed .list-group .list-group-item:hover,
-#nav-drawer .list-group .list-group-item:hover {
-    background-color: #00535d;
-    border-radius: 10px;
-}
-
-#nav-drawer.closed .list-group .list-group-item:hover>ul {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#nav-drawer.closed .list-group .list-group-item ul li.list-group-item:hover {
-    border-bottom-right-radius: 10px;
-}
-
-#nav-drawer-footer {
-    background: rgb(0, 113, 160);
-    height: auto;
-}
-
-/* Right */
-
-[data-region="blocks-column"] {
-    background-color: rgb(0, 0, 0);
-}
-
-/* Breadcrumb */
-#page-navbar .breadcrumb li>* {
-    background-color: rgb(40, 40, 40);
-    border-color: rgb(40, 40, 40);
-    color: rgb(220, 220, 220);
-}
-
-#page-navbar .breadcrumb li .no-link {
-    background-color: rgb(0, 113, 160);
-    border-left-color: rgb(0, 113, 160);
-    color: rgb(255, 255, 255);
-}
-
-#page-navbar .breadcrumb li::after {
-    border-left-color: rgb(40, 40, 40);
-}
-
-/* User Dropdown */
-
-.popover-region-toggle::before {
+img, #form>br {
     display: none;
 }
 
-.popover-region-toggle::after {
-    right: 15px;
-}
-
-.dropdown-menu {
-    background: rgb(50, 50, 50);
-}
-
-.dropdown-item, .dropdown-item {
-    background: rgb(50, 50, 50);
-    color: rgb(255, 255, 255);
-}
-
-.dropdown-item:hover, .dropdown-item:focus {
-    background: rgb(70, 70, 70);
-    color: rgb(255, 255, 255);
-}
-
-a.dropdown-toggle:focus,
-[role="button"]:focus {
-    box-shadow: none;
-}
-
-/* Search Bar and Setting Icon */
-
-nav.navbar .moove-search-input {
-    background: #313740;
-    line-height: 60px;
-    margin-top: 5px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.navbar-expand .navbar-nav .nav-link {
-    padding-left: 20px;
-    padding-right: 10px;
-}
-
-nav.navbar ul.navbar-nav .lang-menu .nav-item {
-    background: #313740;
-    line-height: 60px;
-    margin-top: 5px;
-    margin-left: 0;
-    margin-right: 10px;
-    margin-bottom: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
-nav.navbar ul.navbar-nav .lang-menu .dropdown-toggle::after {
-    display: none;
-}
-
-.region_main_settings_menu_proxy {
-    background: rgb(20, 20, 20);
-}
-
-.custom-select {
-    background-color: rgb(50, 50, 50);
-    border-color: rgb(50, 50, 50);
-    color: rgb(240, 240, 240);
-}
-
-input[type="text"],
-input[type="password"] {
-    background-color: rgb(50, 50, 50);
-    border: solid 2px rgb(100, 100, 100);
-    color: rgb(255, 255, 255);
-}
-
-input[type="text"]:hover,
-input[type="password"]:hover,
-input[type="text"]:focus,
-input[type="password"]:focus
-{
-    background-color: rgb(50, 50, 50);
-    border: solid 2px rgb(100, 100, 100);
-    color: rgb(255, 255, 255);
-}
-
-input:-internal-autofill-selected {
-    background-color: rgb(50, 50, 50) !important;
-    color: rgb(255, 255, 255) !important;
-}
-
-/* Pop ups */
-
-.modal.show {
-    background: rgba(0, 0, 0, 0.01);
-    backdrop-filter: blur(5px);
-}
-
-.modal-dialog {
-    max-width: 550px;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-dialog[tabindex="0"]:focus {
-    box-shadow: none;
-}
-
-.modal-content {
-    background: rgb(30, 30, 30);
-    border-radius: 10px;
-    padding: 4em 4em;
-}
-
-.modal-header,
-.modal-footer {
-    border: none;    
-}
-
-.close {
-    color: rgb(200, 200, 200);
-    text-shadow: none;
-    transition: 0.4s;
-    font-size: 28px;
-}
-
-.close:hover {
-    color: rgb(230, 230, 230);
-}
-
-.modal-body .mform>.form-group {
+#content, #window {
+    float: none;
+    width: 100%;
     margin: 0;
 }
 
-.modal-body .container {
+#content {
+    height: 100%;
+    width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(100px);
+    border: none;
+    border-radius: 5px;
+}
+
+#content h1 {
+    width: 500px;
+    margin: 50px auto 0;
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    background: none;
+    color: #f6f6f6;
+}
+
+#content h1::after {
+    content: "Sign in to continue";
+    display: block;
+    color: rgb(198, 198, 198);
+    font-size: 16px;
+}
+
+#note {
+    font-size: 0;
+    float: none;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error-msg {
+    font-size: 12px;
+    color: #f19d9d;
+}
+
+#form {
+    float: none;
+    width: 500px;
+    background: none;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+
+#form form {
+    border: 0;
     padding: 0;
 }
 
-.modal-body select,
-.modal-body select:focus {
-    background-color: rgb(40, 40, 40);
-    border: 0;
-    color: rgb(230, 230, 230);
-    outline: 0;
-    box-shadow: none;
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Body */
-
-body,
-#page-site-index.notloggedin #page {
-    background-color: #000;
-    color: rgb(240, 240, 240);
+#form label {
+    width: 100%;
+    display: block;
+    padding-top: 8px;
+    padding-left: 10px;
+    color: #c1c1c1;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-#page-my-index {
-    background-color: #000;
-    color: rgb(240, 240, 240);
+#form input {   
+    width: 100%;
+    border: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-right: 0;
+    background: inherit;
+    color: #fff;
+    font-size: 18px;
+    border-bottom: solid 2px #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
 }
 
-a {
-    color: #9dcdf8;
+#form select {
+    width: calc(100% + 10px);
+    border: none;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-right: 0;
+    background: inherit;
+    color: #fff;
+    font-size: 18px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
 }
 
-a:hover {
-    color: #d2e8fc;
-}
-
-#page-login-index.moove-login {
-    background-color: #000;
-}
-
-#page-login-index.moove-login #page-wrapper #page {
-    background-image: none;
-}
-
-#page-login-index.moove-login .loginpanel .card-block .instructions {
-    background: #004c9f;
-}
-
-#page-login-index.moove-login .loginpanel .card-block .form .input-group-addon {
-    background: #9f5200;
-}
-
-/* Content */
-
-.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well {
-    background-color: #141414;
-    border-color: #141414;
-}
-
-h1, .h1, h2, .h2, .path-calendar .maincalendar .calendar-controls .current, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    color: rgb(255, 255, 255);
-}
-
-.text-muted {
-    color: rgb(220, 220, 220) !important;
-}
-
-#region-main {
-    background: #141414;
-}
-
-.alert-danger, #page-admin-index .adminerror {
-    background-color: #712b29;
-    border-color: #712b29;
-    color: #f7dddc;
-}
-
-/* Tabs */
-
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    background-color: #c9c9c9;
-}
-
-.nav-tabs .nav-link:hover {
-    border-color: transparent;
-}
-
-/* Pagination */
-
-.page-item.disabled .page-link {
-    background-color: rgb(40, 40, 40);
-    border-color: rgb(40, 40, 40);
-}
-
-/* Buttons */
-.btn-secondary, .btn-default {
-    color: rgb(200, 200, 200);
-}
-
-/* Footer */
-#page-footer {
-    background: #aa570c; 
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Login */
-
-#page > .container-fluid {
+#form label:nth-child(13) {
     display: none;
 }
 
-#page-site-index.notloggedin #page-header {
-    background-color: rgb(0, 0, 0);
+#form input[type="submit"] {
+    border: none;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    background: #008ce1;
+    cursor: pointer;
 }
 
-#page-site-index.notloggedin #page-header #loginbox #boxForm {
-    background-color: rgb(30, 30, 30);
+#form input[type="submit"]:hover, select {
+    cursor: pointer;
+}
 }
 
-#page-site-index.notloggedin #page-header #loginbox #boxForm {
-    color: rgb(200, 200, 200);
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/") {
+/* Information */
+
+body, html, label, h1, h2, h3, h4, h5, h6, span, div, a, table, td, tr {
+    font-family: "Google Sans", "Product Sans", "Lato", sans-serif;
 }
 
-#page-site-index #mooveslideshow {
+#header {
+    position: relative;
+}
+
+#header #logo {
+    display: none;
+}
+
+#header #menuinf {
     margin: 0;
+    position: static;
+    display: inline-block;
+    padding-top: 40px;
+    height: auto;
+    background: none;
 }
 
-body.notloggedin #loginbox .input-group .input-group-addon {
-    background-color: rgb(136, 136, 136);
+#header #menuinf::before {
+    content: "XMUM Academic Affairs Online System";
+    font-size: 24px;
+    padding-left: 20px;
+    color: #e0e0e0;
+    font-weight: 600;
 }
 
-body.notloggedin .card {
-    border-radius: 10px;
+/* Revamped NavBar */
+
+#header #menuinf #menu {
+    height: auto;
+    display: block;
+    padding-top: 70px;
+    padding-left: 0;
 }
 
-body.notloggedin .card-body {
-    padding: 5em 4em;
+#nav {
+    display: inline-block;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(30px);
 }
 
-body.notloggedin .card-body label {
-    display: none;
+#nav>li {
+    width: 200px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px 0;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 
-body.notloggedin #loginbox h3 {
-    margin-bottom: 1.5em;
+#nav>li:hover {
+    background: none;
 }
 
-body.notloggedin #loginbox .input-group {
-    margin-bottom: 1.25em;
+#nav>li>a {
+    color: #51c0ff;
+    font-weight: normal;
+    font-size: 16px;
 }
 
-body.notloggedin #loginbox .sign-up-btn .btn {
+#nav li ul {
+    border-width: 0;
+    width: 200px;
+    padding: 10px 0;
+    margin-top: 10px;
+    background: rgba(30, 30, 30, 1);
+    border-left: 1px solid rgb(30, 30, 30);
+    border-right: 1px solid rgb(30, 30, 30);
+    border-bottom: 1px solid rgb(30, 30, 30);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#nav li li {
+    padding: 5px 0;
+    width: auto;
+    font-size: 14px;
+}
+
+#nav>li>ul>li:hover {
+    background: transparent;
+}
+
+#nav li li a {
+    color: #ececec;
+}
+
+#nav li li a:hover {
+    color: #fff;
+}
+
+#header #menuinf #inf {
+    color: #e1e1e1;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: auto;
+    border: solid 1px transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: right;
+    z-index: 0;
+}
+
+#nav li:nth-child(5) {
+    position: absolute;
+    right: 20px;
+    min-width: 0;
+    width: auto;
+    border: none;
+    box-shadow: none;
+    transition: 0.4s;
+}
+
+#nav li:nth-child(5) a {
+    color: #e8e8e8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Main */
+
+#m_ext {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     width: 100%;
 }
 
-body.notloggedin label {
-    color: rgb(210, 210, 210);
+#main {
+    border: none;
+    min-height: auto;
 }
 
-/* Update 2.0 */
-#page-site-index.notloggedin .carousel-item {
-    filter: brightness(0.6);
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Dashboard */
-
-/* Dashboard Cards */
-.block_recentlyaccessedcourses {
-    background: rgb(40, 40, 40);
+#main2 {
+    margin: 0 auto;
+    max-width: 1000px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.dashboard-card-deck .dashboard-card,
-.pagelayout-mydashboard .card-deck .card {
-    width: 250px;
-    flex-basis: 250px;
+#main2 h3 {
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #e2e2e2;
+    text-transform: uppercase;
 }
 
-.dashboard-card {
-    background: #9f5200;
+table {
+    max-width: 600px;
 }
 
-.coursemenubtn .icon {
-    filter: brightness(2);
-}
-
-.block .block-cards .btn.btn-link.btn-icon:hover {
-    background: #8d4900;
-}
-
-.card-footer.dashboard-card-footer {
-    background: #8d4900 !important;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.page-header-image img,
-.dashboard-card-deck .dashboard-card .dashboard-card-img {
-    filter: brightness(0.6);
-}
-
-#block-region-content .dashboard-card-deck .dashboard-card .dashboard-card-img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card {
-    border-radius: 10px;
-}
-
-#page-my-index #region-main-box #region-main .card:not([class*="dashboard-card"]) {
-    border-top: 0;
-}
-
-.aalink:focus {
+table.form th {
+    border: none;
     background: none;
-    outline: none;
-    box-shadow: none;
+    text-align: left;
+    color: #899ba5;
+    text-transform: uppercase;
 }
 
-.block .block-cards .course-summaryitem {
-    background: #141414;
-    padding: 2em !important;
-    border-radius: 10px;
-}
-
-.w-100 {
-    margin-left: 10px;
-}
-
-.w-50 {
-    width: 100% !important;
-}
-
-/* Dashboard Options */
-
-.btn-outline-secondary {
+table.form td {
+    border: none;
     color: rgb(230, 230, 230);
 }
 
-.card-footer .progress {
-    background: #8d4900 !important;
-    margin-left: 0;
-    border-radius: 10px;
+table.form tr>td:nth-child(3) {
+    display: none;
 }
 
-.progress {
-    background: #141414 !important;
-    border-radius: 10px;
+select option {
+    background: #3a3b3b;
 }
 
-.progress .progress-bar {
-    background-color: #d56f00;
+/* Footer */
+#footer {
+    border: none;
+}
 }
 
-.alert-success {
-    background: #b0bbaf;
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Kb"), url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url("https://ac.xmu.edu.my/student/index.php?c=Xk&a=index"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj") {
+/* Timetable Adjustment */
+
+#main2 {
+    max-width: none;
+    width: calc(100% - 40px);
 }
 
-.block_myoverview .btn,
-.singlebutton .btn {
-    border-radius: 10px;
+#page-nav {
+    background: #3a3b3b;
+    padding-bottom: 10px;
 }
 
-.btn-outline-secondary:focus, .btn-outline-secondary.focus {
-    box-shadow: none;
+#page-nav table {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#page-nav table td {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    color: rgb(240, 240, 240);
+}
+
+#page-nav table td select {
+    font-size: 16px;
+    background-color: transparent;
+    color: rgb(240, 240, 240);
+    border: none;
+    font-weight: 600;
     outline: none;
+    cursor: pointer;
 }
 
-.btn-outline-secondary:hover {
-    background: rgb(50, 50, 50);
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Dark Theme Fix */
-
-.paged-content-page-container .list-group-item {
-    background: rgb(30, 30, 30);
-}
-
-.page-link {
-    background-color: rgb(40, 40, 40);
-    border-color: rgb(40, 40, 40);
-    color: rgb(255, 255, 255);
-    transition-duration: 0.4s;
+#page-nav table td input[type="button"] {
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    background: #434343;
+    color: #fff;
+    padding: 5px 15px;
+    position: absolute;
+    right: 30px;
+    top: 165px;
+    cursor: pointer;
 }
 
-.page-link:hover {
-    background-color: rgb(60, 60, 60);
-    border-color: rgb(60, 60, 60);
+#page-nav table td input[type="button"]:hover {
+    background: #585858;
 }
 
-.dropdown-item a {
-    color: rgb(255, 255, 255);
+#page-nav span {
+    display: none;
 }
 
-.table thead th, table.collection thead th, table.flexible thead th, .generaltable thead th,
-.table th, table.collection th, table.flexible th, .generaltable th, .table td, table.collection td, table.flexible td, .generaltable td {
+table.solid, table {
+    border: none;
+    max-width: none;
+    table-layout: fixed;
+}
+
+table.solid th, table.data th {
+    background: #3a3b3b;
+    border-top: none; 
+    border-color: #464747;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    width: calc(100% / 5);
+    font-size: 12px;
+}
+
+table.solid th:nth-child(1), table.data th:nth-child(1) {
+    width: 130px;
+}
+
+table.solid th:nth-child(7), table.solid th:nth-child(8) {
+    display: none;
+}
+
+table.solid td.even, table.solid td.row_kb {
+    display: table-cell;
+}
+
+table.solid td, table.data td {
     border-color: rgb(70, 70, 70);
+    background: rgba(70, 70, 70, 0.3);
 }
 
-nav.navbar .moove-search-input i {
-    color: rgb(255, 255, 255);
+table.solid td.even, table.data td:nth-child(1) {
+    width: 130px;
+    font-weight: 600;
+    background: #00578c;
+    border-color: #00578c;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.search-input-form input, .search-input-form input:hover, .search-input-form input:focus {
-    background: rgb(30, 30, 30);
-    border: 0;
-    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0);
-}
-
-nav.navbar .moove-search-input .search-input-form .close-search {
-    background: rgb(30, 30, 30);
-}
-
-.popover-region-container,
-nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container {
-    background: rgb(50, 50, 50);
-    border: none;
-}
-
-nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container:hover {
-    background: rgb(70, 70, 70);
-}
-
-.popover-region-footer-container,
-nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-footer-container {
-    background: rgb(40, 40, 40);
-    border: none;
-}
-
-/* Calender */
-.path-calendar .maincalendar .calendarmonth .header {
-    background: rgb(50, 50, 50);
-    border: solid;
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Dark Theme on Template 2 - White Blue */
-
-#page-wrapper #page #page-content,
-section#region-main {
-    background: rgb(0, 0, 0);
-}
-
-header#page-header {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-#nav-drawer .list-group-item {
-    background: rgb(0, 0, 0);
-    color: rgb(200, 200, 200);
-    border: rgb(0, 0, 0);
-}
-
-#nav-drawer .list-group-item.active {
-    color: rgb(255, 255, 255);
-}
-
-.navbar-fhs .navbar-brand {
-    color: rgb(255, 255, 255);
-}
-
-.section li.activity:hover {
-    background-color: rgb(30, 30, 30);
-    border: none;
-}
-}
-
-@-moz-document url-prefix("https://l.xmu.edu.my/") {
-/* Accessibility */
-
-#accessibilitybar {
-    background: rgb(30, 30, 30);
-}
-
-#accessibilitybar .container {
-    margin-right: 0;
-}
-
-#accessibilitybar .bars ul li .btn {
+table.solid td.row_kb {
+    background: #b23183;
+    border-color: #ac1877;
     color: rgb(230, 230, 230);
-    background: rgb(70, 70, 70);
+    font-weight: normal;
+}
 }
 
-#accessibilitybar .bars #sitecolor_color2 {
-    background-color: #848468;
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=Wdkc"), url("https://ac.xmu.edu.my/student/index.php?c=Search&a=Ksap"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Search&a=Cj"), url-prefix("https://ac.xmu.edu.my/student/index.php?c=Pj&a=index") {
+/* Tweaks to Data Table (Course List, Exam) */
+
+table.data td {
+    text-align: center !important;
+    background: #444;
+    border-color: #545454;
+    color: rgb(213, 213, 213);
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 }
 
-#accessibilitybar .bars #sitecolor_color3 {
-    background-color: #6b8db0;
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Xk&a=index") {
+/* Online Registration */
+
+#page-nav span {
+    display: inline;
+    color: #a2cde6 !important;
+}
+}
+
+@-moz-document url-prefix("https://ac.xmu.edu.my/student/") {
+/* Mobile Adjustment */
+
+@media screen and (max-width: 1000px) {
+    
+    /* Status */
+    #header #menuinf #inf {
+        display: none;
+    }
+    
+    /* NavBar */
+    #nav {
+        margin-bottom: 0;
+    }
+    
+    /* Main */
+    #m_ext {
+        position: static;
+        padding-top: 0;
+        padding-bottom: 50px;
+        background: rgb(30, 30, 30);
+    }
+    
+    #main2 h3::after {
+        content: 'Please view on fullscreen, this website is so horribly built for mobile view.';
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+        color: rgb(158, 158, 158);
+    }
+    
+    #main2 {
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 0;
+        background: transparent;
+    }
+    
+    /* Timetable */
+    #page-nav table td input[type="button"] {
+        position: static;
+    }
+    
+    table.solid th:nth-child(1) {
+        width: 70px;
+    }
+}
+}
+
+@-moz-document url("https://ac.xmu.edu.my/student/index.php?c=Default&a=inf") {
+/* Personal Information Mobile Adjustment */
+
+@media screen and (max-width: 1000px) {
+    #main2 {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+
 }
 }
