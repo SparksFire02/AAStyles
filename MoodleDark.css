@@ -61,19 +61,40 @@ nav.navbar .moove-search-input {
     width: auto;
 }
 
+.border {
+    border: 0 !important;
+}
+
+.p-2 {
+    padding: 2em 0 0 0 !important;
+}
+
+.mb-2.header .w-100 {
+    margin: 0;
+}
+
+nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container.unread {
+    background: rgb(60, 60, 60);
+}
+
 /* Sidebar */
 #nav-drawer {
     height: calc(100% - 116px);
 }
 
 #nav-drawer .list-group .list-group-item a:hover,
-#nav-drawer.closed .list-group .list-group-item:hover {
+#nav-drawer.closed .list-group .list-group-item:hover,
+#nav-drawer .list-group .list-group-item:hover {
     background-color: #00535d;
     border-radius: 10px;
 }
 
 #nav-drawer.closed .list-group .list-group-item:hover>ul {
     border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#nav-drawer.closed .list-group .list-group-item ul li.list-group-item:hover {
     border-bottom-right-radius: 10px;
 }
 
@@ -177,6 +198,7 @@ nav.navbar ul.navbar-nav .lang-menu .dropdown-toggle::after {
     background-color: rgb(50, 50, 50);
     border-color: rgb(50, 50, 50);
     color: rgb(240, 240, 240);
+    border-radius: 10px;
 }
 
 input[type="text"],
@@ -581,10 +603,54 @@ nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-regi
     border: none;
 }
 
+#page-course-view-topics .course-content .single-section .sectionname, #page-course-view-preview .course-content .single-section .sectionname, #page-course-view-topics .course-content .section .sectionname, #page-course-view-preview .course-content .section .sectionname {
+    background: rgb(40, 40, 40);
+    border: none;
+}
+
 /* Calender */
 .path-calendar .maincalendar .calendarmonth .header {
     background: rgb(50, 50, 50);
     border: solid;
+}
+
+/* Submission */
+.generaltable {
+    color: rgb(230, 230, 230);
+}
+
+.path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
+    background-color: rgb(50, 50, 50);
+    color: rgb(240, 240, 240);
+}
+
+.path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted {
+    background: #005700;
+    color: rgb(240, 240, 240);
+}
+
+.generaltable tbody tr:hover {
+    color: inherit;
+}
+
+/* Notification Forums */
+.forum-post-container {
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+}
+
+.forum-post-container:focus>.focus-target {
+    outline: none;
+}
+
+.path-mod-forum :target>.forumpost:before {
+    display: none;
+}
+
+/* Video */
+#contentframe {
+    border: none;
+    border-radius: 10px;
 }
 }
 
