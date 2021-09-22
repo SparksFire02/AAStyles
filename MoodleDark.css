@@ -608,7 +608,12 @@ nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-regi
     border: none;
 }
 
-/* Calender */
+/* Rounded Corner Fixes */
+.btn-primary, .btn-secondary, input {
+    border-radius: 10px;
+}    
+
+/* Calendar */
 .path-calendar .maincalendar .calendarmonth .header {
     background: rgb(50, 50, 50);
     border: solid;
@@ -624,13 +629,66 @@ nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-regi
     color: rgb(240, 240, 240);
 }
 
-.path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted {
+.path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted,
+.path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded,
+.path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission {
     background: #005700;
     color: rgb(240, 240, 240);
 }
 
 .generaltable tbody tr:hover {
     color: inherit;
+}
+
+textarea {
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding: 0 10px;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.filemanager {
+    background: rgb(30, 30, 30);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.yui3-panel.moodle-dialogue {
+    width: 600px !important;
+}
+
+.moodle-dialogue-base .moodle-dialogue-wrap {
+    padding: 2em 4em;
+    border-radius: 10px;
+}
+
+.filemanager .card,
+.filemanager .yui3-datatable-header,
+.filemanager .yui3-datatable-even .yui3-datatable-cell,
+.moodle-dialogue-base .moodle-dialogue-wrap {
+    background: rgb(30, 30, 30) !important;
+    border: none;
+}
+
+.filemanager .yui3-datatable-header {
+    text-shadow: none;
+    color: rgb(230, 230, 230) !important;
+}
+
+.filemanager select,
+.filemanager select:focus {
+    background-color: rgb(40, 40, 40);
+    border: 0;
+    border-radius: 10px;
+    color: rgb(230, 230, 230);
+    outline: 0;
+    box-shadow: none;
+}
+
+.filemanager input,
+.filemanager button {
+    border-radius: 10px;
 }
 
 /* Notification Forums */
