@@ -101,6 +101,7 @@ nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-regi
 #nav-drawer-footer {
     background: rgb(0, 113, 160);
     height: auto;
+    z-index: 1000;
 }
 
 /* Right */
@@ -206,6 +207,7 @@ input[type="password"] {
     background-color: rgb(50, 50, 50);
     border: solid 2px rgb(100, 100, 100);
     color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 input[type="text"]:hover,
@@ -216,6 +218,7 @@ input[type="password"]:focus
     background-color: rgb(50, 50, 50);
     border: solid 2px rgb(100, 100, 100);
     color: rgb(255, 255, 255);
+    border-radius: 10px;
 }
 
 input:-internal-autofill-selected {
@@ -647,15 +650,28 @@ textarea {
     color: rgb(255, 255, 255) !important;
 }
 
+.moodle-dialogue-base .moodle-dialogue-lightbox {
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(5px)
+}
+
+.yui3-skin-sam .yui3-widget-mask {
+    opacity: 1;
+}
 
 .filemanager {
     background: rgb(30, 30, 30);
     border-radius: 10px;
-    padding-top: 10px;
+    padding: 10px 20px 20px;
 }
 
 .yui3-panel.moodle-dialogue {
-    width: 600px !important;
+    width: auto !important;
+    max-width: 1000px !important;
+    left: 0 !important; 
+    right: 0 !important; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .moodle-dialogue-base .moodle-dialogue-wrap {
@@ -666,7 +682,8 @@ textarea {
 .filemanager .card,
 .filemanager .yui3-datatable-header,
 .filemanager .yui3-datatable-even .yui3-datatable-cell,
-.moodle-dialogue-base .moodle-dialogue-wrap {
+.moodle-dialogue-base .moodle-dialogue-wrap,
+.file-picker .fp-content {
     background: rgb(30, 30, 30) !important;
     border: none;
 }
@@ -691,6 +708,38 @@ textarea {
     border-radius: 10px;
 }
 
+.moodle-dialogue-base .closebutton {
+    color: rgb(230, 230, 230);
+}
+
+.moodle-dialogue-base .btn-cancel {
+    background: rgb(40, 40, 40);
+    color: rgb(230, 230, 230);
+}
+
+.fp-navbar.bg-faded {
+    background: rgb(30, 30, 30);
+    border: none;
+}
+
+.form-control,
+.form-control:focus {
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    border: 0;
+    color: rgb(230, 230, 230);
+    outline: 0;
+    box-shadow: none;
+}
+
+.fp-iconview .fp-thumbnail {
+    border: none;
+}
+
+.fp-iconview .fp-filename-field .fp-filename {
+    background: rgb(30, 30, 30);
+}
+
 /* Notification Forums */
 .forum-post-container {
     background: rgb(30, 30, 30);
@@ -703,6 +752,28 @@ textarea {
 
 .path-mod-forum :target>.forumpost:before {
     display: none;
+}
+
+#page-mod-forum-view table .limit-width {
+    color: rgb(230, 230, 230);
+}
+
+.table.discussion-list {
+    color: rgb(230, 230, 230);
+}
+
+.forumpost .row.header {
+    border-radius: 10px;
+    border: none;
+    padding: 15px 10px 5px;
+}
+
+.forumpost .w-100 {
+    margin-left: 0;
+}
+
+.forumpost .row.header, .path-course-view .unread, span.unread {
+    background: #9f5200;
 }
 
 /* Video */
