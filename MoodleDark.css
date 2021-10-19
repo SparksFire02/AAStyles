@@ -1,841 +1,917 @@
 @-moz-document domain("l.xmu.edu.my") {
-/* Navbars, Sidepanels and Footers */ 
-
-/* Navbar */
-
-nav.navbar {
-    background-color: #272c33;
-}
-
-.btn-secondary, .btn-default {
-    background-color: #272c33;
-    border-color: #272c33;
-}
-
-.btn-secondary:hover, .btn-default:hover,
-.btn-secondary:not(:disabled):not(.disabled):active {
-    background-color: rgb(70, 70, 70);
-    border-color: rgb(70, 70, 70);
-    color: rgb(255, 255, 255);
-}
-
-.btn-secondary:not(:disabled):not(.disabled):active {
-    color: rgb(255, 255, 255);
-}
-
-@media (min-width: 768px) and (max-width: 1365px) {
-    .custom-menus {
-        display: none !important;
+    /* Navbars, Sidepanels and Footers */ 
+    
+    /* Navbar */
+    
+    nav.navbar {
+        background-color: #272c33;
     }
-}
-
-nav.navbar .drawer-toggle .nav-link,
-nav.navbar ul.navbar-nav .lang-menu .nav-link,
-nav.navbar ul.navbar-nav .popover-region .popover-region-toggle,
-a.dropdown-toggle,
-.navbar-light .navbar-brand,
-.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-    color: #fff;
-}
-
-nav.navbar ul.navbar-nav li>a, nav.navbar ul.navbar-nav .nav-item>a {
-    color: rgb(220, 220, 220);
-}
-
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-    color: rgb(200, 200, 200);
-}
-
-#page-site-index.notloggedin .btn-login-top {
-    color: rgb(255, 255, 255);
-    border: rgb(255, 255, 255) 1px solid;
-}
-
-
-nav.navbar ul.navbar-nav .lang-menu .nav-link,
-nav.navbar ul.navbar-nav .popover-region .popover-region-toggle {
-    padding: 0;   
-}
-
-nav.navbar .moove-search-input {
-    width: auto;
-}
-
-.border {
-    border: 0 !important;
-}
-
-.p-2 {
-    padding: 2em 0 0 0 !important;
-}
-
-.mb-2.header .w-100 {
-    margin: 0;
-}
-
-nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container.unread {
-    background: rgb(60, 60, 60);
-}
-
-/* Sidebar */
-#nav-drawer {
-    height: calc(100% - 116px);
-}
-
-#nav-drawer .list-group .list-group-item a:hover,
-#nav-drawer.closed .list-group .list-group-item:hover,
-#nav-drawer .list-group .list-group-item:hover {
-    background-color: #00535d;
-    border-radius: 10px;
-}
-
-#nav-drawer.closed .list-group .list-group-item:hover>ul {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-#nav-drawer.closed .list-group .list-group-item ul li.list-group-item:hover {
-    border-bottom-right-radius: 10px;
-}
-
-#nav-drawer-footer {
-    background: rgb(0, 113, 160);
-    height: auto;
-    z-index: 1000;
-}
-
-/* Right */
-
-[data-region="blocks-column"] {
-    background-color: rgb(0, 0, 0);
-}
-
-/* Breadcrumb */
-#page-navbar .breadcrumb li>* {
-    background-color: rgb(40, 40, 40);
-    border-color: rgb(40, 40, 40);
-    color: rgb(220, 220, 220);
-}
-
-#page-navbar .breadcrumb li .no-link {
-    background-color: rgb(0, 113, 160);
-    border-left-color: rgb(0, 113, 160);
-    color: rgb(255, 255, 255);
-}
-
-#page-navbar .breadcrumb li::after {
-    border-left-color: rgb(40, 40, 40);
-}
-
-/* User Dropdown */
-
-.popover-region-toggle::before {
-    display: none;
-}
-
-.popover-region-toggle::after {
-    right: 15px;
-}
-
-.dropdown-menu {
-    background: rgb(50, 50, 50);
-}
-
-.dropdown-item, .dropdown-item {
-    background: rgb(50, 50, 50);
-    color: rgb(255, 255, 255);
-}
-
-.dropdown-item:hover, .dropdown-item:focus {
-    background: rgb(70, 70, 70);
-    color: rgb(255, 255, 255);
-}
-
-a.dropdown-toggle:focus,
-[role="button"]:focus {
-    box-shadow: none;
-}
-
-/* Search Bar and Setting Icon */
-
-nav.navbar .moove-search-input {
-    background: #313740;
-    line-height: 60px;
-    margin-top: 5px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.navbar-expand .navbar-nav .nav-link {
-    padding-left: 20px;
-    padding-right: 10px;
-}
-
-nav.navbar ul.navbar-nav .lang-menu .nav-item {
-    background: #313740;
-    line-height: 60px;
-    margin-top: 5px;
-    margin-left: 0;
-    margin-right: 10px;
-    margin-bottom: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-}
-
-nav.navbar ul.navbar-nav .lang-menu .dropdown-toggle::after {
-    display: none;
-}
-
-.region_main_settings_menu_proxy {
-    background: rgb(20, 20, 20);
-}
-
-.custom-select {
-    background-color: rgb(50, 50, 50);
-    border-color: rgb(50, 50, 50);
-    color: rgb(240, 240, 240);
-    border-radius: 10px;
-}
-
-input[type="text"],
-input[type="password"] {
-    background-color: rgb(50, 50, 50);
-    border: solid 2px rgb(100, 100, 100);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-}
-
-input[type="text"]:hover,
-input[type="password"]:hover,
-input[type="text"]:focus,
-input[type="password"]:focus
-{
-    background-color: rgb(50, 50, 50);
-    border: solid 2px rgb(100, 100, 100);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-}
-
-input:-internal-autofill-selected {
-    background-color: rgb(50, 50, 50) !important;
-    color: rgb(255, 255, 255) !important;
-}
-
-/* Pop ups */
-
-.modal.show {
-    background: rgba(0, 0, 0, 0.01);
-    backdrop-filter: blur(5px);
-}
-
-.modal-dialog {
-    max-width: 550px;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-dialog[tabindex="0"]:focus {
-    box-shadow: none;
-}
-
-.modal-content {
-    background: rgb(30, 30, 30);
-    border-radius: 10px;
-    padding: 4em 4em;
-}
-
-.modal-header,
-.modal-footer {
-    border: none;    
-}
-
-.close {
-    color: rgb(200, 200, 200);
-    text-shadow: none;
-    transition: 0.4s;
-    font-size: 28px;
-}
-
-.close:hover {
-    color: rgb(230, 230, 230);
-}
-
-.modal-body .mform>.form-group {
-    margin: 0;
-}
-
-.modal-body .container {
-    padding: 0;
-}
-
-.modal-body select,
-.modal-body select:focus {
-    background-color: rgb(40, 40, 40);
-    border: 0;
-    color: rgb(230, 230, 230);
-    outline: 0;
-    box-shadow: none;
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Body */
-
-body,
-#page-site-index.notloggedin #page {
-    background-color: #000;
-    color: rgb(240, 240, 240);
-}
-
-#page-my-index {
-    background-color: #000;
-    color: rgb(240, 240, 240);
-}
-
-a {
-    color: #9dcdf8;
-}
-
-a:hover {
-    color: #d2e8fc;
-}
-
-#page-login-index.moove-login {
-    background-color: #000;
-}
-
-#page-login-index.moove-login #page-wrapper #page {
-    background-image: none;
-}
-
-#page-login-index.moove-login .loginpanel .card-block .instructions {
-    background: #004c9f;
-}
-
-#page-login-index.moove-login .loginpanel .card-block .form .input-group-addon {
-    background: #9f5200;
-}
-
-/* Content */
-
-.card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well {
-    background-color: #141414;
-    border-color: #141414;
-}
-
-h1, .h1, h2, .h2, .path-calendar .maincalendar .calendar-controls .current, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    color: rgb(255, 255, 255);
-}
-
-.text-muted {
-    color: rgb(220, 220, 220) !important;
-}
-
-#region-main {
-    background: #141414;
-}
-
-.alert-danger, #page-admin-index .adminerror {
-    background-color: #712b29;
-    border-color: #712b29;
-    color: #f7dddc;
-}
-
-/* Tabs */
-
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    background-color: #c9c9c9;
-}
-
-.nav-tabs .nav-link:hover {
-    border-color: transparent;
-}
-
-/* Pagination */
-
-.page-item.disabled .page-link {
-    background-color: rgb(40, 40, 40);
-    border-color: rgb(40, 40, 40);
-}
-
-/* Buttons */
-.btn-secondary, .btn-default {
-    color: rgb(200, 200, 200);
-}
-
-/* Footer */
-#page-footer {
-    background: #aa570c; 
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Login */
-
-#page > .container-fluid {
-    display: none;
-}
-
-#page-site-index.notloggedin #page-header {
-    background-color: rgb(0, 0, 0);
-}
-
-#page-site-index.notloggedin #page-header #loginbox #boxForm {
-    background-color: rgb(30, 30, 30);
-}
-
-#page-site-index.notloggedin #page-header #loginbox #boxForm {
-    color: rgb(200, 200, 200);
-}
-
-#page-site-index #mooveslideshow {
-    margin: 0;
-}
-
-body.notloggedin #loginbox .input-group .input-group-addon {
-    background-color: rgb(136, 136, 136);
-}
-
-body.notloggedin .card {
-    border-radius: 10px;
-}
-
-body.notloggedin .card-body {
-    padding: 5em 4em;
-}
-
-body.notloggedin .card-body label {
-    display: none;
-}
-
-body.notloggedin #loginbox h3 {
-    margin-bottom: 1.5em;
-}
-
-body.notloggedin #loginbox .input-group {
-    margin-bottom: 1.25em;
-}
-
-body.notloggedin #loginbox .sign-up-btn .btn {
-    width: 100%;
-}
-
-body.notloggedin label {
-    color: rgb(210, 210, 210);
-}
-
-/* Update 2.0 */
-#page-site-index.notloggedin .carousel-item {
-    filter: brightness(0.6);
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Dashboard */
-
-/* Dashboard Cards */
-.block_recentlyaccessedcourses {
-    background: rgb(40, 40, 40);
-}
-
-.dashboard-card-deck .dashboard-card,
-.pagelayout-mydashboard .card-deck .card {
-    width: 250px;
-    flex-basis: 250px;
-}
-
-.dashboard-card {
-    background: #9f5200;
-}
-
-.coursemenubtn .icon {
-    filter: brightness(2);
-}
-
-.block .block-cards .btn.btn-link.btn-icon:hover {
-    background: #8d4900;
-}
-
-.card-footer.dashboard-card-footer {
-    background: #8d4900 !important;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.page-header-image img,
-.dashboard-card-deck .dashboard-card .dashboard-card-img {
-    filter: brightness(0.6);
-}
-
-#block-region-content .dashboard-card-deck .dashboard-card .dashboard-card-img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.card {
-    border-radius: 10px;
-}
-
-#page-my-index #region-main-box #region-main .card:not([class*="dashboard-card"]) {
-    border-top: 0;
-}
-
-.aalink:focus {
-    background: none;
-    outline: none;
-    box-shadow: none;
-}
-
-.block .block-cards .course-summaryitem {
-    background: #141414;
-    padding: 2em !important;
-    border-radius: 10px;
-}
-
-.w-100 {
-    margin-left: 10px;
-}
-
-.w-50 {
-    width: 100% !important;
-}
-
-/* Dashboard Options */
-
-.btn-outline-secondary {
-    color: rgb(230, 230, 230);
-}
-
-.card-footer .progress {
-    background: #8d4900 !important;
-    margin-left: 0;
-    border-radius: 10px;
-}
-
-.progress {
-    background: #141414 !important;
-    border-radius: 10px;
-}
-
-.progress .progress-bar {
-    background-color: #d56f00;
-}
-
-.alert-success {
-    background: #b0bbaf;
-}
-
-.block_myoverview .btn,
-.singlebutton .btn {
-    border-radius: 10px;
-}
-
-.btn-outline-secondary:focus, .btn-outline-secondary.focus {
-    box-shadow: none;
-    outline: none;
-}
-
-.btn-outline-secondary:hover {
-    background: rgb(50, 50, 50);
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Dark Theme Fix */
-
-.paged-content-page-container .list-group-item {
-    background: rgb(30, 30, 30);
-}
-
-.page-link {
-    background-color: rgb(40, 40, 40);
-    border-color: rgb(40, 40, 40);
-    color: rgb(255, 255, 255);
-    transition-duration: 0.4s;
-}
-
-.page-link:hover {
-    background-color: rgb(60, 60, 60);
-    border-color: rgb(60, 60, 60);
-}
-
-.dropdown-item a {
-    color: rgb(255, 255, 255);
-}
-
-.table thead th, table.collection thead th, table.flexible thead th, .generaltable thead th,
-.table th, table.collection th, table.flexible th, .generaltable th, .table td, table.collection td, table.flexible td, .generaltable td {
-    border-color: rgb(70, 70, 70);
-}
-
-nav.navbar .moove-search-input i {
-    color: rgb(255, 255, 255);
-}
-
-.search-input-form input, .search-input-form input:hover, .search-input-form input:focus {
-    background: rgb(30, 30, 30);
-    border: 0;
-    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0);
-}
-
-nav.navbar .moove-search-input .search-input-form .close-search {
-    background: rgb(30, 30, 30);
-}
-
-.popover-region-container,
-nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container {
-    background: rgb(50, 50, 50);
-    border: none;
-}
-
-nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container:hover {
-    background: rgb(70, 70, 70);
-}
-
-.popover-region-footer-container,
-nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-footer-container {
-    background: rgb(40, 40, 40);
-    border: none;
-}
-
-#page-course-view-topics .course-content .single-section .sectionname, #page-course-view-preview .course-content .single-section .sectionname, #page-course-view-topics .course-content .section .sectionname, #page-course-view-preview .course-content .section .sectionname {
-    background: rgb(40, 40, 40);
-    border: none;
-}
-
-/* Rounded Corner Fixes */
-.btn-primary, .btn-secondary, input {
-    border-radius: 10px;
-}    
-
-/* Calendar */
-.path-calendar .maincalendar .calendarmonth .header {
-    background: rgb(50, 50, 50);
-    border: solid;
-}
-
-/* Submission */
-.generaltable {
-    color: rgb(230, 230, 230);
-}
-
-.path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
-    background-color: rgb(50, 50, 50);
-    color: rgb(240, 240, 240);
-}
-
-.path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted,
-.path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded,
-.path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission {
-    background: #005700;
-    color: rgb(240, 240, 240);
-}
-
-.generaltable tbody tr:hover {
-    color: inherit;
-}
-
-textarea {
-    background: rgb(30, 30, 30);
-    border-radius: 10px;
-    padding: 0 10px;
-    color: rgb(255, 255, 255) !important;
-}
-
-.moodle-dialogue-base .moodle-dialogue-lightbox {
-    background: rgba(0, 0, 0, 0.01);
-    backdrop-filter: blur(5px)
-}
-
-.yui3-skin-sam .yui3-widget-mask {
-    opacity: 1;
-}
-
-.filemanager {
-    background: rgb(30, 30, 30);
-    border-radius: 10px;
-    padding: 10px 20px 20px;
-}
-
-.yui3-panel.moodle-dialogue {
-    width: auto !important;
-    max-width: 1000px !important;
-    left: 0 !important; 
-    right: 0 !important; 
-    margin-left: auto; 
-    margin-right: auto; 
-}
-
-.moodle-dialogue-base .moodle-dialogue-wrap {
-    padding: 2em 4em;
-    border-radius: 10px;
-}
-
-.filemanager .card,
-.filemanager .yui3-datatable-header,
-.filemanager .yui3-datatable-even .yui3-datatable-cell,
-.moodle-dialogue-base .moodle-dialogue-wrap,
-.file-picker .fp-content {
-    background: rgb(30, 30, 30) !important;
-    border: none;
-}
-
-.filemanager .yui3-datatable-header {
-    text-shadow: none;
-    color: rgb(230, 230, 230) !important;
-}
-
-.filemanager select,
-.filemanager select:focus {
-    background-color: rgb(40, 40, 40);
-    border: 0;
-    border-radius: 10px;
-    color: rgb(230, 230, 230);
-    outline: 0;
-    box-shadow: none;
-}
-
-.filemanager input,
-.filemanager button {
-    border-radius: 10px;
-}
-
-.moodle-dialogue-base .closebutton {
-    color: rgb(230, 230, 230);
-}
-
-.moodle-dialogue-base .btn-cancel {
-    background: rgb(40, 40, 40);
-    color: rgb(230, 230, 230);
-}
-
-.fp-navbar.bg-faded {
-    background: rgb(30, 30, 30);
-    border: none;
-}
-
-.form-control,
-.form-control:focus {
-    border-radius: 10px;
-    background-color: rgb(40, 40, 40);
-    border: 0;
-    color: rgb(230, 230, 230);
-    outline: 0;
-    box-shadow: none;
-}
-
-.fp-iconview .fp-thumbnail {
-    border: none;
-}
-
-.fp-iconview .fp-filename-field .fp-filename {
-    background: rgb(30, 30, 30);
-}
-
-/* Notification Forums */
-.forum-post-container {
-    background: rgb(30, 30, 30);
-    border-radius: 10px;
-}
-
-.forum-post-container:focus>.focus-target {
-    outline: none;
-}
-
-.path-mod-forum :target>.forumpost:before {
-    display: none;
-}
-
-#page-mod-forum-view table .limit-width {
-    color: rgb(230, 230, 230);
-}
-
-.table.discussion-list {
-    color: rgb(230, 230, 230);
-}
-
-.forumpost .row.header {
-    border-radius: 10px;
-    border: none;
-    padding: 15px 10px 5px;
-}
-
-.forumpost .w-100 {
-    margin-left: 0;
-}
-
-.forumpost .row.header, .path-course-view .unread, span.unread {
-    background: #9f5200;
-}
-
-/* Video */
-#contentframe {
-    border: none;
-    border-radius: 10px;
-}
-}
-
-@-moz-document domain("l.xmu.edu.my") {
-/* Dark Theme on Template 2 - White Blue */
-
-#page-wrapper #page #page-content,
-section#region-main {
-    background: rgb(0, 0, 0);
-}
-
-header#page-header {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-#nav-drawer .list-group-item {
-    background: rgb(0, 0, 0);
-    color: rgb(200, 200, 200);
-    border: rgb(0, 0, 0);
-}
-
-#nav-drawer .list-group-item.active {
-    color: rgb(255, 255, 255);
-}
-
-.navbar-fhs .navbar-brand {
-    color: rgb(255, 255, 255);
-}
-
-.section li.activity:hover {
-    background-color: rgb(30, 30, 30);
-    border: none;
-}
-}
-
-@-moz-document url-prefix("https://l.xmu.edu.my/") {
-/* Accessibility */
-
-#accessibilitybar {
-    background: rgb(30, 30, 30);
-}
-
-#accessibilitybar .container {
-    margin-right: 0;
-}
-
-#accessibilitybar .bars ul li .btn {
-    color: rgb(230, 230, 230);
-    background: rgb(70, 70, 70);
-}
-
-#accessibilitybar .bars #sitecolor_color2 {
-    background-color: #848468;
-}
-
-#accessibilitybar .bars #sitecolor_color3 {
-    background-color: #6b8db0;
-}
-}
+    
+    .btn-secondary, .btn-default {
+        background-color: #272c33;
+        border-color: #272c33;
+    }
+    
+    .btn-secondary:hover, .btn-default:hover,
+    .btn-secondary:not(:disabled):not(.disabled):active {
+        background-color: rgb(70, 70, 70);
+        border-color: rgb(70, 70, 70);
+        color: rgb(255, 255, 255);
+    }
+    
+    .btn-secondary:not(:disabled):not(.disabled):active {
+        color: rgb(255, 255, 255);
+    }
+    
+    @media (min-width: 768px) and (max-width: 1365px) {
+        .custom-menus {
+            display: none !important;
+        }
+    }
+    
+    nav.navbar .drawer-toggle .nav-link,
+    nav.navbar ul.navbar-nav .lang-menu .nav-link,
+    nav.navbar ul.navbar-nav .popover-region .popover-region-toggle,
+    a.dropdown-toggle,
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+        color: #fff;
+    }
+    
+    nav.navbar ul.navbar-nav li>a, nav.navbar ul.navbar-nav .nav-item>a {
+        color: rgb(220, 220, 220);
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+        color: rgb(200, 200, 200);
+    }
+    
+    #page-site-index.notloggedin .btn-login-top {
+        color: rgb(255, 255, 255);
+        border: rgb(255, 255, 255) 1px solid;
+    }
+    
+    
+    nav.navbar ul.navbar-nav .lang-menu .nav-link,
+    nav.navbar ul.navbar-nav .popover-region .popover-region-toggle {
+        padding: 0;   
+    }
+    
+    nav.navbar .moove-search-input {
+        width: auto;
+    }
+    
+    .border {
+        border: 0 !important;
+    }
+    
+    .p-2 {
+        padding: 2em 0 0 0 !important;
+    }
+    
+    .mb-2.header .w-100 {
+        margin: 0;
+    }
+    
+    nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container.unread {
+        background: rgb(60, 60, 60);
+    }
+    
+    nav.navbar ul.navbar-nav .usermenu .dropdown.show .dropdown-menu {
+        border-radius: 5px;
+    }
+    
+    /* Sidebar */
+    #nav-drawer {
+        height: calc(100% - 116px);
+    }
+    
+    #nav-drawer .list-group .list-group-item a:hover,
+    #nav-drawer.closed .list-group .list-group-item:hover,
+    #nav-drawer .list-group .list-group-item:hover {
+        background-color: #00535d;
+        border-radius: 10px;
+    }
+    
+    #nav-drawer.closed .list-group .list-group-item:hover>ul {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    #nav-drawer.closed .list-group .list-group-item ul li.list-group-item:hover {
+        border-bottom-right-radius: 10px;
+    }
+    
+    #nav-drawer-footer {
+        background: rgb(0, 113, 160);
+        height: auto;
+        z-index: 1000;
+    }
+    
+    /* Right */
+    
+    [data-region="blocks-column"] {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    /* Breadcrumb */
+    #page-navbar .breadcrumb li>* {
+        background-color: rgb(40, 40, 40);
+        border-color: rgb(40, 40, 40);
+        color: rgb(220, 220, 220);
+    }
+    
+    #page-navbar .breadcrumb li .no-link {
+        background-color: rgb(0, 113, 160);
+        border-left-color: rgb(0, 113, 160);
+        color: rgb(255, 255, 255);
+    }
+    
+    #page-navbar .breadcrumb li::after {
+        border-left-color: rgb(40, 40, 40);
+    }
+    
+    /* User Dropdown */
+    
+    .popover-region-toggle::before {
+        display: none;
+    }
+    
+    .popover-region-toggle::after {
+        right: 15px;
+    }
+    
+    .dropdown-menu {
+        background: rgb(50, 50, 50);
+    }
+    
+    .dropdown-item, .dropdown-item {
+        background: rgb(50, 50, 50);
+        color: rgb(255, 255, 255);
+    }
+    
+    .dropdown-item:hover, .dropdown-item:focus {
+        background: rgb(70, 70, 70);
+        color: rgb(255, 255, 255);
+    }
+    
+    a.dropdown-toggle:focus,
+    [role="button"]:focus {
+        box-shadow: none;
+    }
+    
+    /* Search Bar and Setting Icon */
+    
+    nav.navbar .moove-search-input {
+        background: #313740;
+        line-height: 60px;
+        margin-top: 5px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .navbar-expand .navbar-nav .nav-link {
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    
+    nav.navbar ul.navbar-nav .lang-menu .nav-item {
+        background: #313740;
+        line-height: 60px;
+        margin-top: 5px;
+        margin-left: 0;
+        margin-right: 10px;
+        margin-bottom: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+    
+    nav.navbar ul.navbar-nav .lang-menu .dropdown-toggle::after {
+        display: none;
+    }
+    
+    .region_main_settings_menu_proxy {
+        background: rgb(20, 20, 20);
+    }
+    
+    .custom-select {
+        background-color: rgb(50, 50, 50);
+        border-color: rgb(50, 50, 50);
+        color: rgb(240, 240, 240);
+        border-radius: 10px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+        background-color: rgb(50, 50, 50);
+        border: solid 2px rgb(100, 100, 100);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+    
+    input[type="text"]:hover,
+    input[type="password"]:hover,
+    input[type="text"]:focus,
+    input[type="password"]:focus
+    {
+        background-color: rgb(50, 50, 50);
+        border: solid 2px rgb(100, 100, 100);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+    
+    input:-internal-autofill-selected {
+        background-color: rgb(50, 50, 50) !important;
+        color: rgb(255, 255, 255) !important;
+    }
+    
+    /* Pop ups */
+    
+    .modal.show {
+        background: rgba(0, 0, 0, 0.01);
+        backdrop-filter: blur(5px);
+    }
+    
+    .modal-dialog {
+        max-width: 550px;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .modal-dialog[tabindex="0"]:focus {
+        box-shadow: none;
+    }
+    
+    .modal-content {
+        background: rgb(30, 30, 30);
+        border-radius: 10px;
+        padding: 4em 4em;
+    }
+    
+    .modal-header,
+    .modal-footer {
+        border: none;    
+    }
+    
+    .close {
+        color: rgb(200, 200, 200);
+        text-shadow: none;
+        transition: 0.4s;
+        font-size: 28px;
+    }
+    
+    .close:hover {
+        color: rgb(230, 230, 230);
+    }
+    
+    .modal-body .mform>.form-group {
+        margin: 0;
+    }
+    
+    .modal-body .container {
+        padding: 0;
+    }
+    
+    .modal-body select,
+    .modal-body select:focus {
+        background-color: rgb(40, 40, 40);
+        border: 0;
+        color: rgb(230, 230, 230);
+        outline: 0;
+        box-shadow: none;
+    }
+    }
+    
+    @-moz-document domain("l.xmu.edu.my") {
+    /* Body */
+    
+    body,
+    #page-site-index.notloggedin #page {
+        background-color: #000;
+        color: rgb(240, 240, 240);
+    }
+    
+    #page-my-index {
+        background-color: #000;
+        color: rgb(240, 240, 240);
+    }
+    
+    a {
+        color: #9dcdf8;
+    }
+    
+    a:hover {
+        color: #d2e8fc;
+    }
+    
+    #page-login-index.moove-login {
+        background-color: #000;
+    }
+    
+    #page-login-index.moove-login #page-wrapper #page {
+        background-image: none;
+    }
+    
+    #page-login-index.moove-login .loginpanel .card-block .instructions {
+        background: #004c9f;
+    }
+    
+    #page-login-index.moove-login .loginpanel .card-block .form .input-group-addon {
+        background: #9f5200;
+    }
+    
+    /* Content */
+    
+    .card, #page-enrol-users #filterform, .que .history, .userprofile .profile_tree section, .groupinfobox, .well {
+        background-color: #141414;
+        border-color: #141414;
+    }
+    
+    h1, .h1, h2, .h2, .path-calendar .maincalendar .calendar-controls .current, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        color: rgb(255, 255, 255);
+    }
+    
+    .text-muted {
+        color: rgb(220, 220, 220) !important;
+    }
+    
+    #region-main {
+        background: #141414;
+    }
+    
+    .alert-danger, #page-admin-index .adminerror {
+        background-color: #712b29;
+        border-color: #712b29;
+        color: #f7dddc;
+    }
+    
+    /* Tabs */
+    
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        background-color: #c9c9c9;
+    }
+    
+    .nav-tabs .nav-link:hover {
+        border-color: transparent;
+    }
+    
+    /* Pagination */
+    
+    .page-item.disabled .page-link {
+        background-color: rgb(40, 40, 40);
+        border-color: rgb(40, 40, 40);
+    }
+    
+    /* Buttons */
+    .btn-secondary, .btn-default {
+        color: rgb(200, 200, 200);
+    }
+    
+    /* Footer */
+    #page-footer {
+        background: #aa570c; 
+    }
+    }
+    
+    @-moz-document domain("l.xmu.edu.my") {
+    /* Login */
+    
+    #page > .container-fluid {
+        display: none;
+    }
+    
+    #page-site-index.notloggedin #page-header {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    #page-site-index.notloggedin #page-header #loginbox #boxForm {
+        background-color: rgb(30, 30, 30);
+    }
+    
+    #page-site-index.notloggedin #page-header #loginbox #boxForm {
+        color: rgb(200, 200, 200);
+    }
+    
+    #page-site-index #mooveslideshow {
+        margin: 0;
+    }
+    
+    body.notloggedin #loginbox .input-group .input-group-addon {
+        background-color: rgb(136, 136, 136);
+    }
+    
+    body.notloggedin .card {
+        border-radius: 10px;
+    }
+    
+    body.notloggedin .card-body {
+        padding: 5em 4em;
+    }
+    
+    body.notloggedin .card-body label {
+        display: none;
+    }
+    
+    body.notloggedin #loginbox h3 {
+        margin-bottom: 1.5em;
+    }
+    
+    body.notloggedin #loginbox .input-group {
+        margin-bottom: 1.25em;
+    }
+    
+    body.notloggedin #loginbox .sign-up-btn .btn {
+        width: 100%;
+    }
+    
+    body.notloggedin label {
+        color: rgb(210, 210, 210);
+    }
+    
+    /* Update 2.0 */
+    #page-site-index.notloggedin .carousel-item {
+        filter: brightness(0.6);
+    }
+    }
+    
+    @-moz-document domain("l.xmu.edu.my") {
+    /* Dashboard */
+    
+    /* Dashboard Cards */
+    .block_recentlyaccessedcourses {
+        background: rgb(40, 40, 40);
+    }
+    
+    .dashboard-card-deck .dashboard-card,
+    .pagelayout-mydashboard .card-deck .card {
+        width: 250px;
+        flex-basis: 250px;
+    }
+    
+    .dashboard-card {
+        background: #9f5200;
+    }
+    
+    .coursemenubtn .icon {
+        filter: brightness(2);
+    }
+    
+    .block .block-cards .btn.btn-link.btn-icon:hover {
+        background: #8d4900;
+    }
+    
+    .card-footer.dashboard-card-footer {
+        background: #8d4900 !important;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+    .page-header-image img,
+    .dashboard-card-deck .dashboard-card .dashboard-card-img {
+        filter: brightness(0.6);
+    }
+    
+    #block-region-content .dashboard-card-deck .dashboard-card .dashboard-card-img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .card {
+        border-radius: 10px;
+    }
+    
+    #page-my-index #region-main-box #region-main .card:not([class*="dashboard-card"]) {
+        border-top: 0;
+    }
+    
+    .aalink:focus {
+        background: none;
+        outline: none;
+        box-shadow: none;
+    }
+    
+    .block .block-cards .course-summaryitem {
+        background: #141414;
+        padding: 2em !important;
+        border-radius: 10px;
+    }
+    
+    .w-100 {
+        margin-left: 10px;
+    }
+    
+    .w-50 {
+        width: 100% !important;
+    }
+    
+    /* Dashboard Options */
+    
+    .btn-outline-secondary {
+        color: rgb(230, 230, 230);
+    }
+    
+    .card-footer .progress {
+        background: #8d4900 !important;
+        margin-left: 0;
+        border-radius: 10px;
+    }
+    
+    .progress {
+        background: #141414 !important;
+        border-radius: 10px;
+    }
+    
+    .progress .progress-bar {
+        background-color: #d56f00;
+    }
+    
+    .alert-success {
+        background: #b0bbaf;
+    }
+    
+    .block_myoverview .btn,
+    .singlebutton .btn {
+        border-radius: 10px;
+    }
+    
+    .btn-outline-secondary:focus, .btn-outline-secondary.focus {
+        box-shadow: none;
+        outline: none;
+    }
+    
+    .btn-outline-secondary:hover {
+        background: rgb(50, 50, 50);
+    }
+    }
+    
+    @-moz-document domain("l.xmu.edu.my") {
+    /* Dark Theme Fix */
+    
+    html, body {
+        color: rgb(210, 210, 210);
+    }
+    
+    .paged-content-page-container .list-group-item {
+        background: rgb(30, 30, 30);
+    }
+    
+    .page-link {
+        background-color: rgb(40, 40, 40);
+        border-color: rgb(40, 40, 40);
+        color: rgb(255, 255, 255);
+        transition-duration: 0.4s;
+    }
+    
+    .page-link:hover {
+        background-color: rgb(60, 60, 60);
+        border-color: rgb(60, 60, 60);
+    }
+    
+    .dropdown-item a {
+        color: rgb(255, 255, 255);
+    }
+    
+    .table thead th, table.collection thead th, table.flexible thead th, .generaltable thead th,
+    .table th, table.collection th, table.flexible th, .generaltable th, .table td, table.collection td, table.flexible td, .generaltable td {
+        border-color: rgb(70, 70, 70);
+    }
+    
+    nav.navbar .moove-search-input i {
+        color: rgb(255, 255, 255);
+    }
+    
+    .search-input-form input, .search-input-form input:hover, .search-input-form input:focus {
+        background: rgb(30, 30, 30);
+        border: 0;
+        box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0);
+    }
+    
+    nav.navbar .moove-search-input .search-input-form .close-search {
+        background: rgb(30, 30, 30);
+    }
+    
+    .popover-region-container,
+    nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container {
+        background: rgb(50, 50, 50);
+        border: none;
+    }
+    
+    nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-content-container .content-item-container:hover {
+        background: rgb(70, 70, 70);
+    }
+    
+    .popover-region-footer-container,
+    nav.navbar ul.navbar-nav .popover-region .popover-region-container .popover-region-footer-container {
+        background: rgb(40, 40, 40);
+        border: none;
+    }
+    
+    #page-course-view-topics .course-content .single-section .sectionname, #page-course-view-preview .course-content .single-section .sectionname, #page-course-view-topics .course-content .section .sectionname, #page-course-view-preview .course-content .section .sectionname {
+        background: rgb(40, 40, 40);
+        border: none;
+    }
+    
+    #page-course-view-topics .course-content .section .sectionname {
+        margin-left: 0;
+        border-radius: 5px;
+    }
+    
+    /* Rounded Corner Fixes */
+    .btn-primary, .btn-secondary, input {
+        border-radius: 10px;
+    }    
+    
+    /* Calendar */
+    .path-calendar .maincalendar .calendarmonth .header {
+        background: rgb(50, 50, 50);
+        border: solid;
+    }
+    
+    /* Submission */
+    .generaltable {
+        color: rgb(230, 230, 230);
+    }
+    
+    .path-mod-assign td.submissionnotgraded, .path-mod-assign div.submissionnotgraded {
+        background-color: rgb(50, 50, 50);
+        color: rgb(240, 240, 240);
+    }
+    
+    .path-mod-assign td.submissionstatussubmitted, .path-mod-assign div.submissionstatussubmitted, .path-mod-assign a:link.submissionstatussubmitted,
+    .path-mod-assign td.submissiongraded, .path-mod-assign div.submissiongraded,
+    .path-mod-assign td.earlysubmission, .path-mod-assign div.earlysubmission {
+        background: #005700;
+        color: rgb(240, 240, 240);
+    }
+    
+    .generaltable tbody tr:hover {
+        color: inherit;
+    }
+    
+    textarea {
+        background: rgb(30, 30, 30);
+        border-radius: 10px;
+        padding: 0 10px;
+        color: rgb(255, 255, 255) !important;
+    }
+    
+    .moodle-dialogue-base .moodle-dialogue-lightbox {
+        background: rgba(0, 0, 0, 0.01);
+        backdrop-filter: blur(5px)
+    }
+    
+    .yui3-skin-sam .yui3-widget-mask {
+        opacity: 1;
+    }
+    
+    .filemanager {
+        background: rgb(30, 30, 30);
+        border-radius: 10px;
+        padding: 10px 20px 20px;
+    }
+    
+    .yui3-panel.moodle-dialogue {
+        width: auto !important;
+        max-width: 1000px !important;
+        left: 0 !important; 
+        right: 0 !important; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+    
+    .moodle-dialogue-base .moodle-dialogue-wrap {
+        padding: 2em 4em;
+        border-radius: 10px;
+    }
+    
+    .filemanager .card,
+    .filemanager .yui3-datatable-header,
+    .filemanager .yui3-datatable-even .yui3-datatable-cell,
+    .moodle-dialogue-base .moodle-dialogue-wrap,
+    .file-picker .fp-content,
+    .filemanager .yui3-datatable-odd .yui3-datatable-cell {
+        background: rgb(30, 30, 30) !important;
+        border: none;
+    }
+    
+    .filemanager .yui3-datatable-header {
+        text-shadow: none;
+        color: rgb(230, 230, 230) !important;
+    }
+    
+    .filemanager select,
+    .filemanager select:focus {
+        background-color: rgb(40, 40, 40);
+        border: 0;
+        border-radius: 10px;
+        color: rgb(230, 230, 230);
+        outline: 0;
+        box-shadow: none;
+    }
+    
+    .filemanager input,
+    .filemanager button {
+        border-radius: 10px;
+    }
+    
+    .moodle-dialogue-base .closebutton {
+        color: rgb(230, 230, 230);
+    }
+    
+    .moodle-dialogue-base .btn-cancel {
+        background: rgb(40, 40, 40);
+        color: rgb(230, 230, 230);
+    }
+    
+    .fp-navbar.bg-faded {
+        background: rgb(30, 30, 30);
+        border: none;
+    }
+    
+    .form-control,
+    .form-control:focus {
+        border-radius: 10px;
+        background-color: rgb(40, 40, 40);
+        border: 0;
+        color: rgb(230, 230, 230);
+        outline: 0;
+        box-shadow: none;
+    }
+    
+    .fp-iconview .fp-thumbnail {
+        border: none;
+    }
+    
+    .fp-iconview .fp-filename-field .fp-filename {
+        background: rgb(30, 30, 30);
+    }
+    
+    /* Notification Forums */
+    .forum-post-container {
+        background: rgb(30, 30, 30);
+        border-radius: 10px;
+    }
+    
+    .forum-post-container:focus>.focus-target {
+        outline: none;
+    }
+    
+    .path-mod-forum :target>.forumpost:before {
+        display: none;
+    }
+    
+    #page-mod-forum-view table .limit-width {
+        color: rgb(230, 230, 230);
+    }
+    
+    .table.discussion-list {
+        color: rgb(230, 230, 230);
+    }
+    
+    .forumpost .row.header {
+        border-radius: 10px;
+        border: none;
+        padding: 15px 10px 5px;
+    }
+    
+    .forumpost .w-100,
+    .path-mod-forum .indent {
+        margin-left: 0;
+    }
+    
+    .forumpost .row.header, .path-course-view .unread, span.unread,
+    .forumpost.unread .row.header, .path-course-view .unread, span.unread {
+        background: #9f5200;
+        border: none;
+    }
+    
+    /* Video */
+    #contentframe {
+        border: none;
+        border-radius: 10px;
+    }
+    }
+    
+    @-moz-document domain("l.xmu.edu.my") {
+    /* Dark Theme on Template 2 - White Blue */
+    
+    #page-wrapper #page #page-content,
+    section#region-main {
+        background: rgb(0, 0, 0);
+    }
+    
+    header#page-header {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    #nav-drawer .list-group-item {
+        background: rgb(0, 0, 0);
+        color: rgb(200, 200, 200);
+        border: rgb(0, 0, 0);
+    }
+    
+    #nav-drawer .list-group-item.active {
+        color: rgb(255, 255, 255);
+    }
+    
+    .navbar-fhs .navbar-brand {
+        color: rgb(255, 255, 255);
+    }
+    
+    .section li.activity:hover {
+        background-color: rgb(30, 30, 30);
+        border: none;
+        border-radius: 5px;
+    }
+    }
+    
+    @-moz-document url-prefix("https://l.xmu.edu.my/") {
+    /* Accessibility */
+    
+    #accessibilitybar {
+        background: rgb(30, 30, 30);
+    }
+    
+    #accessibilitybar .container {
+        margin-right: 0;
+    }
+    
+    #accessibilitybar .bars ul li .btn {
+        color: rgb(230, 230, 230);
+        background: rgb(70, 70, 70);
+    }
+    
+    #accessibilitybar .bars #sitecolor_color2 {
+        background-color: #848468;
+    }
+    
+    #accessibilitybar .bars #sitecolor_color3 {
+        background-color: #6b8db0;
+    }
+    }
+    
+    @-moz-document url-prefix("https://l.xmu.edu.my/") {
+    /* Site Home */
+    .sitetopic,
+    #site-news-forum {
+        background: rgb(40, 40, 40);
+        padding: 0 1.2em;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #site-news-forum {
+        padding: 1.5em 1.2em
+    }
+    
+    #page-site-index .subscribelink {
+        text-align: left;
+    }
+    
+    #coursesearch {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .form-inline .form-control {
+        width: calc(100% - 100px);
+    }
+    
+    }
+    
+    @-moz-document url-prefix("https://l.xmu.edu.my/") {
+    /* Quiz */
+    
+    table.quizreviewsummary td.cell {
+        background: rgb(30, 30, 30);
+    }
+    
+    table.quizreviewsummary th.cell {
+        background: rgb(30, 30, 30);
+    }
+    
+    .que .info {
+        background: rgb(50, 50, 50);
+        border-radius: 5px;
+        border: none;
+    }
+    
+    .que .formulation {
+        border-radius: 5px;
+        background: #00424d;
+        color: rgb(255, 255, 255);
+    }
+    
+    .que .outcome, .que .comment {
+        color: #fff1dc;
+        background-color: #533100;
+    }
+    }
